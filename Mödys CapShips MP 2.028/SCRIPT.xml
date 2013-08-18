@@ -1,0 +1,4572 @@
+<script>
+<header name="Mödys Capships MP (v. 2.028 dev)" savesafe="false" exclusive="false">
+<scriptversion>
+1.0
+</scriptversion>
+<author>
+***M.o.D.*** & see the README
+</author>
+<modurl>
+http://l-i4xx.xe.cx/
+</modurl>
+<modversion>
+2.028
+</modversion>
+<description>
+Mod Requirements:
+- INSTALLED 1.1 PATCH
+- FLMM 1.44 or newer (1.5b1)
+
+Latest cherry picks:
+-merged some dll files (pls report issues)
+-Overall Tweaking³ ^_^
+-SolarArch fixes
+-Spinning Planets, 8472 rep, modded FLHook ;)
+
+Have Fun =)
+FLMM might freeze during activation, stay cool
+
+Credits & Greetings:
+EVERY MP Server Team out there!!!
+(yep really)
+without them this wouldnt be possible.
+
+FL won't die !!!!!!!!!1111 eins elf
+
+</description>
+<options default="0:0">
+
+<option id="0" name="-- Thank you for playing Freelancer =) -- " savesafe="true">
+<item id="0" name="">
+</item>
+</option>
+
+<option id="1" name="-- Mostly Used Client Options --" savesafe="true">
+<item id="0" name="">
+</item>
+</option>
+
+<option id="2" name="More realistic space lighting?" savesafe="false">
+<item id="0" name="No, im afraight of darkness (original Lights & Ambient)">
+</item>
+<item id="1" name="Darkish Realspace Ambient (recommend)">
+</item>
+<item id="2" name="Just Dark Backgrounds (still normal lighting)">
+</item>
+<item id="3" name="Just Dark Lightning (still normal backgrounds)">
+</item>
+</option>
+
+<option id="3" name="Battledust?" savesafe="true">
+<item id="0" name="Delete Battledust.ale to deactivate it">
+</item>
+</option>
+
+<option id="4" name="''Ambient Explosions Size''?" savesafe="false">
+<item id="0" name="Default">
+</item>
+<item id="1" name="Small (if u have performance issues)">
+</item>
+<item id="2" name="None (if u have heavy performance issues)">
+</item>
+<item id="3" name="Huge (WARNING)">
+</item>
+</option>
+
+<option id="5" name="Change HUD interface?" savesafe="true">
+<item id="0" name="Disabled">
+</item>
+<item id="1" name="WTS HUD">
+</item>
+<item id="2" name="BigBalls HUD">
+</item>
+<item id="3" name="Alien HUD">
+</item>
+<item id="4" name="Romulan HUD">
+</item>
+<item id="5" name="Klingon HUD">
+</item>
+<item id="6" name="Green HUD">
+</item>
+<item id="7" name="Red HUD">
+</item>
+<item id="8" name="Pink HUD">
+</item>
+<item id="9" name="Yellow HUD">
+</item>
+</option>
+
+<option id="6" name="Additional Introscreens?" savesafe="false">
+<item id="0" name="Disabled">
+</item>
+<item id="1" name="Enabled">
+</item>
+</option>
+
+<option id="7" name="MoD´s special Crosshair?" savesafe="false">
+<item id="0" name="Disabled">
+</item>
+<item id="1" name="Enabled">
+</item>
+</option>
+
+<option id="8" name="Numeric Health & Ammo Display?" savesafe="false">
+<item id="0" name="Disabled">
+</item>
+<item id="1" name="Enabled">
+</item>
+</option>
+
+<option id="9" name="Spinning Planets" savesafe="false">
+<item id="0" name="Disabled">
+</item>
+<item id="1" name="Enabled">
+</item>
+</option>
+
+<option id="10" name="Language? (EXE\resources.dll)" savesafe="false">
+<item id="0" name="English">
+</item>
+<item id="1" name="German">
+</item>
+</option>
+
+<option id="11" name="'English Audio Fixes'?" savesafe="false">
+<item id="0" name="Disabled">
+</item>
+<item id="1" name="Enabled">
+</item>
+</option>
+
+;------------------------------------------------------------------------------------------------
+; WIDESCREEN Options
+<option id="99" name=" " savesafe="true">
+<item id="0" name=" ">
+</item>
+</option>
+
+<option id="100" name="-- Other Graphical Options --" savesafe="true">
+<item id="0" name="">
+</item>
+</option>
+
+<option id="101" name="Bloom Effect? (Delete d3d8.dll to completely remove it)" savesafe="true">
+<item id="0" name="Disabled">
+</item>
+<item id="1" name="Black Prophecy Look(buggy in nebulas)">
+</item>
+<item id="2" name="Just Dark :D">
+</item>
+<item id="3" name="''Normal'' Bloom">
+</item>
+<item id="4" name="Another Dark^^">
+</item>
+<item id="5" name="Shattered Worlds Like">
+</item>
+<item id="6" name="88' Flak vibrant">
+</item>
+<item id="7" name="88' Flak filtered">
+</item>
+</option>
+
+<option  id="102" name="Smaller Ingame Font?" savesafe="false">
+<item id="0" name="Disabled">
+</item>
+<item id="1" name="Enabled">
+</item>
+</option>
+;------------------------------------------------------------------------------------------------
+; GLS Server Workaround
+<option  id="200" name="GLS Server Workaround?" savesafe="false">
+<item id="0" name="Disabled">
+</item>
+<item id="1" name="Enabled">
+</item>
+</option>
+
+</options>
+</header>
+
+;////////////////////////////////////////////////
+;	SINGLEPLAYER EXE SWAPPING & Other Tweaks
+<data file="EXE\Freelancer.exe" method="copyfile" sourcefile="EXE\Freelancer.ex_" options="001:0" >
+</data>
+<data file="EXE\Freelancer.exe" method="copyfile" sourcefile="EXE\FreelancerSP.ex_" options="001:1,001:2" >
+</data>
+
+
+;////////////////////////////////////////////////
+;	BLOOM
+<data file="EXE\d3d8.dll" method="copyfile" sourcefile="DATA\ENB\d3d8.moep" options="101:1" >
+</data>
+<data file="EXE\d3d9.dll" method="copyfile" sourcefile="DATA\ENB\d3d9.moep" options="101:1" >
+</data>
+<data file="EXE\enbconvertor.ini" method="copyfile" sourcefile="DATA\ENB\enbconvertor.moep" options="101:1" >
+</data>
+<data file="EXE\enbseries.ini" method="copyfile" sourcefile="DATA\ENB\enbseriesBP.moep" options="101:1" >
+</data>
+
+<data file="EXE\d3d8.dll" method="copyfile" sourcefile="DATA\ENB\d3d8.moep" options="101:2" >
+</data>
+<data file="EXE\d3d9.dll" method="copyfile" sourcefile="DATA\ENB\d3d9.moep" options="101:2" >
+</data>
+<data file="EXE\enbconvertor.ini" method="copyfile" sourcefile="DATA\ENB\enbconvertor.moep" options="101:2" >
+</data>
+<data file="EXE\enbseries.ini" method="copyfile" sourcefile="DATA\ENB\enbseriesLIGHT.moep" options="101:2" >
+</data>
+
+<data file="EXE\d3d8.dll" method="copyfile" sourcefile="DATA\ENB\d3d8_normal.moep" options="101:3" >
+</data>
+<data file="EXE\d3d9.dll" method="copyfile" sourcefile="DATA\ENB\d3d9.moep" options="101:3" >
+</data>
+<data file="EXE\enbconvertor.ini" method="copyfile" sourcefile="DATA\ENB\enbconvertorNORMAL.moep" options="101:3" >
+</data>
+<data file="EXE\enbseries.ini" method="copyfile" sourcefile="DATA\ENB\enbseriesNORMAL.moep" options="101:3" >
+</data>
+
+<data file="EXE\d3d8.dll" method="copyfile" sourcefile="DATA\ENB\another_d3d8.moep" options="101:4" >
+</data>
+<data file="EXE\d3d9.dll" method="copyfile" sourcefile="DATA\ENB\another_d3d9.moep" options="101:4" >
+</data>
+<data file="EXE\d3dx9_26.dll" method="copyfile" sourcefile="DATA\ENB\another_d3dx9_26.moep" options="101:4" >
+</data>
+<data file="EXE\enbconvertor.ini" method="copyfile" sourcefile="DATA\ENB\another_enbconvertor.moep" options="101:4" >
+</data>
+<data file="EXE\enbpalette.bmp" method="copyfile" sourcefile="DATA\ENB\another_enbpalette.moep" options="101:4" >
+</data>
+<data file="EXE\enbseries.ini" method="copyfile" sourcefile="DATA\ENB\another_enbseries.moep" options="101:4" >
+</data>
+
+<data file="EXE\d3d8.dll" method="copyfile" sourcefile="DATA\ENB\SW_d3d8.moep" options="101:5" >
+</data>
+<data file="EXE\d3d9.dll" method="copyfile" sourcefile="DATA\ENB\SW_d3d9.moep" options="101:5" >
+</data>
+<data file="EXE\enbconvertor.ini" method="copyfile" sourcefile="DATA\ENB\SW_enbconvertor.moep" options="101:5" >
+</data>
+<data file="EXE\enbseries.ini" method="copyfile" sourcefile="DATA\ENB\SW_enbseries.moep" options="101:5" >
+</data>
+
+<data file="Exe\d3d8.dll" method="copyfile" sourcefile="DATA\ENB\88_bloom8.moep" options="101:6" >
+</data>
+<data file="Exe\d3d9.dll" method="copyfile" sourcefile="DATA\ENB\88_bloom9.moep" options="101:6" >
+</data>
+<data file="Exe\d3dx9_26.dll" method="copyfile" sourcefile="DATA\ENB\88_bloomx9_26.moep" options="101:6" >
+</data>
+<data file="Exe\enbconvertor.ini" method="copyfile" sourcefile="DATA\ENB\88_enbconvertor.moep" options="101:6" >
+</data>
+<data file="Exe\enbseries.ini" method="copyfile" sourcefile="DATA\ENB\88_enbseries.moep" options="101:6" >
+</data>
+<data file="Exe\enbpalette.bmp" method="copyfile" sourcefile="DATA\ENB\88_enbpalette.moep" options="101:6" >
+</data>
+<data file="Data\Fx\envmapbasic.mat" method="copyfile" sourcefile="DATA\ENB\88_envmapbasic-d3d9.mat.moep" options="101:6" >
+</data>
+
+<data file="Exe\d3d8.dll" method="copyfile" sourcefile="DATA\ENB\88_bloom8.moep" options="101:7" >
+</data>
+<data file="Exe\d3d9.dll" method="copyfile" sourcefile="DATA\ENB\88_bloom9_20.moep" options="101:7" >
+</data>
+<data file="Exe\d3dx9_26.dll" method="copyfile" sourcefile="DATA\ENB\88_bloomx9_26.moep" options="101:7" >
+</data>
+<data file="Exe\enbconvertor.ini" method="copyfile" sourcefile="DATA\ENB\88_enbconvertor.moep" options="101:7" >
+</data>
+<data file="Exe\enbseries.ini" method="copyfile" sourcefile="DATA\ENB\88_enbseries_20.moep" options="101:7" >
+</data>
+<data file="Exe\effect.txt" method="copyfile" sourcefile="DATA\ENB\88_effect_20.moep" options="101:7" >
+</data>
+<data file="Exe\enbpalette.bmp" method="copyfile" sourcefile="DATA\ENB\88_enbpalette.moep" options="101:7" >
+</data>
+
+;///////////////////////////////////////////////
+;	SPACE LIGHTING credits to =EOA=Louva-Deus
+<data file="data\solar\loadouts.ini" method="sectionmodify" options="2:1,2:2">
+<section>
+[Loadout]
+nickname = trade_lane_ring
+</section>
+<source>
+equip = SlowXLargeRed_TradeLane, HpGreenLight01
+equip = SlowXLargeRed_TradeLane, HpGreenLight02
+equip = SlowXLargeRed_TradeLane, HpGreenLight03
+equip = SlowXLargeRed_TradeLane, HpGreenLight04
+equip = SlowXLargeRed_TradeLane, HpGreenLight05
+equip = SlowXLargeRed_TradeLane, HpGreenLight06
+equip = SlowXLargeRed_TradeLane, HpGreenLight07
+equip = SlowXLargeRed_TradeLane, HpGreenLight08
+equip = SlowXLargeGreen_TradeLane, HpRedLight01
+equip = SlowXLargeGreen_TradeLane, HpRedLight02
+equip = SlowXLargeGreen_TradeLane, HpRedLight03
+equip = SlowXLargeGreen_TradeLane, HpRedLight04
+equip = SlowXLargeGreen_TradeLane, HpRedLight05
+equip = SlowXLargeGreen_TradeLane, HpRedLight06
+equip = SlowXLargeGreen_TradeLane, HpRedLight07
+equip = SlowXLargeGreen_TradeLane, HpRedLight08
+</source>
+</data>
+<data file="data\solar\loadouts.ini" method="sectionmodify" options="2:1,2:2">
+<section>
+[Loadout]
+nickname = trade_lane_ring_br_01
+</section>
+<source>
+equip = SlowXLargeRed_TradeLane, HpGreenLight01
+equip = SlowXLargeRed_TradeLane, HpGreenLight02
+equip = SlowXLargeRed_TradeLane, HpGreenLight03
+equip = SlowXLargeRed_TradeLane, HpGreenLight04
+equip = SlowXLargeRed_TradeLane, HpGreenLight05
+equip = SlowXLargeRed_TradeLane, HpGreenLight06
+equip = SlowXLargeRed_TradeLane, HpGreenLight07
+equip = SlowXLargeRed_TradeLane, HpGreenLight08
+equip = SlowXLargeGreen_TradeLane, HpRedLight01
+equip = SlowXLargeGreen_TradeLane, HpRedLight02
+equip = SlowXLargeGreen_TradeLane, HpRedLight03
+equip = SlowXLargeGreen_TradeLane, HpRedLight04
+equip = SlowXLargeGreen_TradeLane, HpRedLight05
+equip = SlowXLargeGreen_TradeLane, HpRedLight06
+equip = SlowXLargeGreen_TradeLane, HpRedLight07
+equip = SlowXLargeGreen_TradeLane, HpRedLight08
+</source>
+</data>
+<data file="data\solar\loadouts.ini" method="sectionmodify" options="2:1,2:2">
+<section>
+[Loadout]
+nickname = trade_lane_ring_br_02
+</section>
+<source>
+equip = SlowXLargeRed_TradeLane, HpGreenLight01
+equip = SlowXLargeRed_TradeLane, HpGreenLight02
+equip = SlowXLargeRed_TradeLane, HpGreenLight03
+equip = SlowXLargeRed_TradeLane, HpGreenLight04
+equip = SlowXLargeRed_TradeLane, HpGreenLight05
+equip = SlowXLargeRed_TradeLane, HpGreenLight06
+equip = SlowXLargeRed_TradeLane, HpGreenLight07
+equip = SlowXLargeRed_TradeLane, HpGreenLight08
+equip = SlowXLargeGreen_TradeLane, HpRedLight01
+equip = SlowXLargeGreen_TradeLane, HpRedLight02
+equip = SlowXLargeGreen_TradeLane, HpRedLight03
+equip = SlowXLargeGreen_TradeLane, HpRedLight04
+equip = SlowXLargeGreen_TradeLane, HpRedLight05
+equip = SlowXLargeGreen_TradeLane, HpRedLight06
+equip = SlowXLargeGreen_TradeLane, HpRedLight07
+equip = SlowXLargeGreen_TradeLane, HpRedLight08
+</source>
+</data>
+<data file="data\solar\loadouts.ini" method="sectionmodify" options="2:1,2:2">
+<section>
+[Loadout]
+nickname = trade_lane_ring_li_01
+</section>
+<source>
+equip = SlowXLargeRed_TradeLane, HpGreenLight01
+equip = SlowXLargeRed_TradeLane, HpGreenLight02
+equip = SlowXLargeRed_TradeLane, HpGreenLight03
+equip = SlowXLargeRed_TradeLane, HpGreenLight04
+equip = SlowXLargeRed_TradeLane, HpGreenLight05
+equip = SlowXLargeRed_TradeLane, HpGreenLight06
+equip = SlowXLargeRed_TradeLane, HpGreenLight07
+equip = SlowXLargeRed_TradeLane, HpGreenLight08
+equip = SlowXLargeGreen_TradeLane, HpRedLight01
+equip = SlowXLargeGreen_TradeLane, HpRedLight02
+equip = SlowXLargeGreen_TradeLane, HpRedLight03
+equip = SlowXLargeGreen_TradeLane, HpRedLight04
+equip = SlowXLargeGreen_TradeLane, HpRedLight05
+equip = SlowXLargeGreen_TradeLane, HpRedLight06
+equip = SlowXLargeGreen_TradeLane, HpRedLight07
+equip = SlowXLargeGreen_TradeLane, HpRedLight08
+</source>
+</data>
+<data file="data\solar\loadouts.ini" method="sectionmodify" options="2:1,2:2">
+<section>
+[Loadout]
+nickname = trade_lane_ring_li_02
+</section>
+<source>
+equip = SlowXLargeRed_TradeLane, HpGreenLight01
+equip = SlowXLargeRed_TradeLane, HpGreenLight02
+equip = SlowXLargeRed_TradeLane, HpGreenLight03
+equip = SlowXLargeRed_TradeLane, HpGreenLight04
+equip = SlowXLargeRed_TradeLane, HpGreenLight05
+equip = SlowXLargeRed_TradeLane, HpGreenLight06
+equip = SlowXLargeRed_TradeLane, HpGreenLight07
+equip = SlowXLargeRed_TradeLane, HpGreenLight08
+equip = SlowXLargeGreen_TradeLane, HpRedLight01
+equip = SlowXLargeGreen_TradeLane, HpRedLight02
+equip = SlowXLargeGreen_TradeLane, HpRedLight03
+equip = SlowXLargeGreen_TradeLane, HpRedLight04
+equip = SlowXLargeGreen_TradeLane, HpRedLight05
+equip = SlowXLargeGreen_TradeLane, HpRedLight06
+equip = SlowXLargeGreen_TradeLane, HpRedLight07
+equip = SlowXLargeGreen_TradeLane, HpRedLight08
+</source>
+</data>
+<data file="data\solar\loadouts.ini" method="sectionmodify" options="2:1,2:2">
+<section>
+[Loadout]
+nickname = trade_lane_ring_li_03
+</section>
+<source>
+equip = SlowXLargeRed_TradeLane, HpGreenLight01
+equip = SlowXLargeRed_TradeLane, HpGreenLight02
+equip = SlowXLargeRed_TradeLane, HpGreenLight03
+equip = SlowXLargeRed_TradeLane, HpGreenLight04
+equip = SlowXLargeRed_TradeLane, HpGreenLight05
+equip = SlowXLargeRed_TradeLane, HpGreenLight06
+equip = SlowXLargeRed_TradeLane, HpGreenLight07
+equip = SlowXLargeRed_TradeLane, HpGreenLight08
+equip = SlowXLargeGreen_TradeLane, HpRedLight01
+equip = SlowXLargeGreen_TradeLane, HpRedLight02
+equip = SlowXLargeGreen_TradeLane, HpRedLight03
+equip = SlowXLargeGreen_TradeLane, HpRedLight04
+equip = SlowXLargeGreen_TradeLane, HpRedLight05
+equip = SlowXLargeGreen_TradeLane, HpRedLight06
+equip = SlowXLargeGreen_TradeLane, HpRedLight07
+equip = SlowXLargeGreen_TradeLane, HpRedLight08
+</source>
+</data>
+<data file="data\solar\loadouts.ini" method="sectionmodify" options="2:1,2:2">
+<section>
+[Loadout]
+nickname = trade_lane_ring_ku_01
+</section>
+<source>
+equip = SlowXLargeRed_TradeLane, HpGreenLight01
+equip = SlowXLargeRed_TradeLane, HpGreenLight02
+equip = SlowXLargeRed_TradeLane, HpGreenLight03
+equip = SlowXLargeRed_TradeLane, HpGreenLight04
+equip = SlowXLargeRed_TradeLane, HpGreenLight05
+equip = SlowXLargeRed_TradeLane, HpGreenLight06
+equip = SlowXLargeRed_TradeLane, HpGreenLight07
+equip = SlowXLargeRed_TradeLane, HpGreenLight08
+equip = SlowXLargeGreen_TradeLane, HpRedLight01
+equip = SlowXLargeGreen_TradeLane, HpRedLight02
+equip = SlowXLargeGreen_TradeLane, HpRedLight03
+equip = SlowXLargeGreen_TradeLane, HpRedLight04
+equip = SlowXLargeGreen_TradeLane, HpRedLight05
+equip = SlowXLargeGreen_TradeLane, HpRedLight06
+equip = SlowXLargeGreen_TradeLane, HpRedLight07
+equip = SlowXLargeGreen_TradeLane, HpRedLight08
+</source>
+</data>
+<data file="data\solar\loadouts.ini" method="sectionmodify" options="2:1,2:2">
+<section>
+[Loadout]
+nickname = trade_lane_ring_rh_01
+</section>
+<source>
+equip = SlowXLargeRed_TradeLane, HpGreenLight01
+equip = SlowXLargeRed_TradeLane, HpGreenLight02
+equip = SlowXLargeRed_TradeLane, HpGreenLight03
+equip = SlowXLargeRed_TradeLane, HpGreenLight04
+equip = SlowXLargeRed_TradeLane, HpGreenLight05
+equip = SlowXLargeRed_TradeLane, HpGreenLight06
+equip = SlowXLargeRed_TradeLane, HpGreenLight07
+equip = SlowXLargeRed_TradeLane, HpGreenLight08
+equip = SlowXLargeGreen_TradeLane, HpRedLight01
+equip = SlowXLargeGreen_TradeLane, HpRedLight02
+equip = SlowXLargeGreen_TradeLane, HpRedLight03
+equip = SlowXLargeGreen_TradeLane, HpRedLight04
+equip = SlowXLargeGreen_TradeLane, HpRedLight05
+equip = SlowXLargeGreen_TradeLane, HpRedLight06
+equip = SlowXLargeGreen_TradeLane, HpRedLight07
+equip = SlowXLargeGreen_TradeLane, HpRedLight08
+</source>
+</data>
+<data file="data\solar\loadouts.ini" method="sectionmodify" options="2:1,2:2">
+<section>
+[Loadout]
+nickname = trade_lane_ring_co_01
+</section>
+<source>
+equip = SlowXLargeRed_TradeLane, HpGreenLight01
+equip = SlowXLargeRed_TradeLane, HpGreenLight02
+equip = SlowXLargeRed_TradeLane, HpGreenLight03
+equip = SlowXLargeRed_TradeLane, HpGreenLight04
+equip = SlowXLargeRed_TradeLane, HpGreenLight05
+equip = SlowXLargeRed_TradeLane, HpGreenLight06
+equip = SlowXLargeRed_TradeLane, HpGreenLight07
+equip = SlowXLargeRed_TradeLane, HpGreenLight08
+equip = SlowXLargeGreen_TradeLane, HpRedLight01
+equip = SlowXLargeGreen_TradeLane, HpRedLight02
+equip = SlowXLargeGreen_TradeLane, HpRedLight03
+equip = SlowXLargeGreen_TradeLane, HpRedLight04
+equip = SlowXLargeGreen_TradeLane, HpRedLight05
+equip = SlowXLargeGreen_TradeLane, HpRedLight06
+equip = SlowXLargeGreen_TradeLane, HpRedLight07
+equip = SlowXLargeGreen_TradeLane, HpRedLight08
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Br01\Br01.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 60, 20, 10
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_noband.cmp
+complex_stars = solar\starsphere\starsphere_br01_stars.cmp
+nebulae = solar\starsphere\starsphere_br01.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Br02\Br02.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 35, 30, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_br02_stars.cmp
+nebulae = solar\starsphere\starsphere_br02.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Br03\Br03.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 40, 25, 55
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_br03_stars.cmp
+nebulae = solar\starsphere\starsphere_br03.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Br04\Br04.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 65, 35, 10
+
+[Background]
+nebulae = solar\starsphere\starsphere_Br04.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Br04\Br04.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+space_color = 50, 30, 10
+</dest>
+<source>
+space_color = 0, 0, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Br05\Br05.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 80, 50, 0
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_br05_stars.cmp
+nebulae = solar\starsphere\starsphere_br05.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Br06\Br06.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 55, 20, 30
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_br06_stars.cmp
+nebulae = solar\starsphere\starsphere_br06.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw01\Bw01.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 25, 35, 45
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_noband.cmp
+complex_stars = solar\starsphere\starsphere_bw01_stars.cmp
+nebulae = solar\starsphere\starsphere_bw01.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw02\Bw02.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 20, 50, 60
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_noband.cmp
+complex_stars = solar\starsphere\starsphere_bw02_stars.cmp
+nebulae = solar\starsphere\starsphere_bw02.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw03\Bw03.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 40, 30, 20
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw04\Bw04.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 60, 40, 20
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_bw04_stars.cmp
+nebulae = solar\starsphere\starsphere_bw04.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw05\Bw05.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 60, 80, 100
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw06\Bw06.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 25, 55, 45
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_bw06_stars.cmp
+nebulae = solar\starsphere\starsphere_bw06.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw07\Bw07.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 20, 30, 60
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_bw07_stars.cmp
+nebulae = solar\starsphere\starsphere_bw07.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw08\Bw08.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 60, 70, 70
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_bw08_stars.cmp
+nebulae = solar\starsphere\starsphere_bw08.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw09\Bw09.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 40, 50, 60
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_noband.cmp
+complex_stars = solar\starsphere\starsphere_bw09_stars.cmp
+nebulae = solar\starsphere\starsphere_bw09.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw10\Bw10.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 90, 90, 110
+
+[Background]
+nebulae = solar\starsphere\starsphere_Bw10.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw10\Bw10.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+space_color = 90, 90, 110
+</dest>
+<source>
+space_color = 0, 0, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew01\Ew01.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 80, 100, 140
+
+[Background]
+nebulae = solar\starsphere\starsphere_Ew01.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew01\Ew01.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+space_color = 10, 40, 80
+</dest>
+<source>
+space_color = 0, 0, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew02\Ew02.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 10, 15, 12
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew03\Ew03.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 55, 65, 70
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_ew03_stars.cmp
+nebulae = solar\starsphere\starsphere_ew03.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew04\Ew04.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 40, 70, 30
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_ew04_stars.cmp
+nebulae = solar\starsphere\starsphere_ew04.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\FP7\FP7_system.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 35, 35, 35
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_bw06_stars.cmp
+nebulae = solar\starsphere\starsphere_Bw06_fp7.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Hi01\Hi01.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 30, 60, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_hi01_stars.cmp
+nebulae = solar\starsphere\starsphere_hi01.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Hi02\Hi02.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 40, 80, 50
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_hi02_stars.cmp
+nebulae = solar\starsphere\starsphere_hi02.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw01\Iw01.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 30, 30, 30
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_noband.cmp
+complex_stars = solar\starsphere\starsphere_iw01_stars.cmp
+nebulae = solar\starsphere\starsphere_iw01.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw02\Iw02.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 40, 50, 60
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+nebulae = solar\starsphere\starsphere_iw02.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw03\Iw03.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 65, 75, 85
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_noband.cmp
+complex_stars = solar\starsphere\starsphere_iw03_stars.cmp
+nebulae = solar\starsphere\starsphere_iw03.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw04\Iw04.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 65, 65, 85
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_noband.cmp
+complex_stars = solar\starsphere\starsphere_iw04_stars.cmp
+nebulae = solar\starsphere\starsphere_iw04.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw05\Iw05.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 10, 20, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow.cmp
+complex_stars = solar\starsphere\starsphere_iw05_stars.cmp
+nebulae = solar\starsphere\starsphere_iw05.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw06\Iw06.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 30, 40, 70
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow.cmp
+complex_stars = solar\starsphere\starsphere_iw06_stars.cmp
+nebulae = solar\starsphere\starsphere_iw06.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku01\Ku01.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 40, 70, 100
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_ku01_stars.cmp
+nebulae = solar\starsphere\starsphere_ku01.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku02\Ku02.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 50, 40, 100
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_ku02_stars.cmp
+nebulae = solar\starsphere\starsphere_ku02.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku03\Ku03.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 35, 45, 65
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_ku03_stars.cmp
+nebulae = solar\starsphere\starsphere_ku03.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku04\Ku04.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 30, 40, 90
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow.cmp
+complex_stars = solar\starsphere\starsphere_ku04_stars.cmp
+nebulae = solar\starsphere\starsphere_ku04.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku05\Ku05.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 40, 50, 110
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_ku05_stars.cmp
+nebulae = solar\starsphere\starsphere_ku05.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku07\Ku07.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 40, 40, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_ku07_stars.cmp
+nebulae = solar\starsphere\starsphere_ku07.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Li01\Li01.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 30, 50, 80
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+nebulae = solar\starsphere\starsphere_li01.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Li02\Li02.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 25, 50, 80
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li02_stars.cmp
+nebulae = solar\starsphere\starsphere_li02.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Li03\Li03.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 45, 50, 75
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow.cmp
+complex_stars = solar\starsphere\starsphere_li03_stars.cmp
+nebulae = solar\starsphere\starsphere_li03.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Li04\Li04.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 40, 45, 55
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_walker.cmp
+complex_stars = solar\starsphere\starsphere_li04_stars.cmp
+nebulae = solar\starsphere\starsphere_li04.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh01\Rh01.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 50, 40, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_walker.cmp
+complex_stars = solar\starsphere\starsphere_rh01_stars.cmp
+nebulae = solar\starsphere\starsphere_rh01.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh02\Rh02.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 30, 30, 30
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_rh02_stars.cmp
+nebulae = solar\starsphere\starsphere_rh02.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh03\Rh03.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 40, 40, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_rh03_stars.cmp
+nebulae = solar\starsphere\starsphere_rh03.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh04\Rh04.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 50, 50, 50
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_rh04_stars.cmp
+nebulae = solar\starsphere\starsphere_rh04.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh05\Rh05.ini" method="filereplace" numtimes="0" options="2:1">
+<dest>
+[Ambient]
+color = 120, 80, 20
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_rh05_stars.3db
+nebulae = solar\starsphere\starsphere_rh05.cmp
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Br01\Br01.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 60, 20, 10
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_noband.cmp
+complex_stars = solar\starsphere\starsphere_br01_stars.cmp
+nebulae = solar\starsphere\starsphere_br01.cmp
+</dest>
+<source>
+[Ambient]
+color = 60, 20, 10
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Br02\Br02.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 35, 30, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_br02_stars.cmp
+nebulae = solar\starsphere\starsphere_br02.cmp
+</dest>
+<source>
+[Ambient]
+color = 35, 30 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Br03\Br03.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 40, 25, 55
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_br03_stars.cmp
+nebulae = solar\starsphere\starsphere_br03.cmp
+</dest>
+<source>
+[Ambient]
+color = 40, 25, 55
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Br04\Br04.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 65, 35, 10
+
+[Background]
+nebulae = solar\starsphere\starsphere_Br04.cmp
+</dest>
+<source>
+[Ambient]
+color = 65, 35, 10
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Br04\Br04.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+space_color = 50, 30, 10
+</dest>
+<source>
+space_color = 50, 30, 10
+</source>
+</data>
+<data file="Data\Universe\Systems\Br05\Br05.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 80, 50, 0
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_br05_stars.cmp
+nebulae = solar\starsphere\starsphere_br05.cmp
+</dest>
+<source>
+[Ambient]
+color = 80, 50, 0
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Br06\Br06.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 55, 20, 30
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_br06_stars.cmp
+nebulae = solar\starsphere\starsphere_br06.cmp
+</dest>
+<source>
+[Ambient]
+color = 55, 20, 30
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw01\Bw01.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 25, 35, 45
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_noband.cmp
+complex_stars = solar\starsphere\starsphere_bw01_stars.cmp
+nebulae = solar\starsphere\starsphere_bw01.cmp
+</dest>
+<source>
+[Ambient]
+color = 25, 35, 45
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw02\Bw02.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 20, 50, 60
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_noband.cmp
+complex_stars = solar\starsphere\starsphere_bw02_stars.cmp
+nebulae = solar\starsphere\starsphere_bw02.cmp
+</dest>
+<source>
+[Ambient]
+color = 20, 50, 60
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw03\Bw03.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 40, 30, 20
+</dest>
+<source>
+[Ambient]
+color = 40, 30, 20
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw04\Bw04.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 60, 40, 20
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_bw04_stars.cmp
+nebulae = solar\starsphere\starsphere_bw04.cmp
+</dest>
+<source>
+[Ambient]
+color = 60, 40, 20
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw05\Bw05.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 60, 80, 100
+</dest>
+<source>
+[Ambient]
+color = 60, 80, 100
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw06\Bw06.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 25, 55, 45
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_bw06_stars.cmp
+nebulae = solar\starsphere\starsphere_bw06.cmp
+</dest>
+<source>
+[Ambient]
+color = 25, 55, 45
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw07\Bw07.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 20, 30, 60
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_bw07_stars.cmp
+nebulae = solar\starsphere\starsphere_bw07.cmp
+</dest>
+<source>
+[Ambient]
+color = 20, 30, 60
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw08\Bw08.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 60, 70, 70
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_bw08_stars.cmp
+nebulae = solar\starsphere\starsphere_bw08.cmp
+</dest>
+<source>
+[Ambient]
+color = 60, 70, 70
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw09\Bw09.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 40, 50, 60
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_noband.cmp
+complex_stars = solar\starsphere\starsphere_bw09_stars.cmp
+nebulae = solar\starsphere\starsphere_bw09.cmp
+</dest>
+<source>
+[Ambient]
+color = 40, 50, 60
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw10\Bw10.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 90, 90, 110
+
+[Background]
+nebulae = solar\starsphere\starsphere_Bw10.cmp
+</dest>
+<source>
+[Ambient]
+color = 90, 90, 110
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw10\Bw10.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+space_color = 90, 90, 110
+</dest>
+<source>
+space_color = 0, 0, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew01\Ew01.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 80, 100, 140
+
+[Background]
+nebulae = solar\starsphere\starsphere_Ew01.cmp
+</dest>
+<source>
+[Ambient]
+color = 80, 100, 140
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew01\Ew01.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+space_color = 10, 40, 80
+</dest>
+<source>
+space_color = 0, 0, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew02\Ew02.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 10, 15, 12
+</dest>
+<source>
+[Ambient]
+color = 10, 15, 12
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew03\Ew03.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 55, 65, 70
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_ew03_stars.cmp
+nebulae = solar\starsphere\starsphere_ew03.cmp
+</dest>
+<source>
+[Ambient]
+color = 55, 65, 70
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew04\Ew04.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 40, 70, 30
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_ew04_stars.cmp
+nebulae = solar\starsphere\starsphere_ew04.cmp
+</dest>
+<source>
+[Ambient]
+color = 40, 70, 30
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\FP7\FP7_system.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 35, 35, 35
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_bw06_stars.cmp
+nebulae = solar\starsphere\starsphere_Bw06_fp7.cmp
+</dest>
+<source>
+[Ambient]
+color = 35, 35, 35
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Hi01\Hi01.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 30, 60, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_hi01_stars.cmp
+nebulae = solar\starsphere\starsphere_hi01.cmp
+</dest>
+<source>
+[Ambient]
+color = 30, 60, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Hi02\Hi02.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 40, 80, 50
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_hi02_stars.cmp
+nebulae = solar\starsphere\starsphere_hi02.cmp
+</dest>
+<source>
+[Ambient]
+color = 40, 80, 50
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw01\Iw01.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 30, 30, 30
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_noband.cmp
+complex_stars = solar\starsphere\starsphere_iw01_stars.cmp
+nebulae = solar\starsphere\starsphere_iw01.cmp
+</dest>
+<source>
+[Ambient]
+color = 30, 30, 30
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw02\Iw02.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 40, 50, 60
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+nebulae = solar\starsphere\starsphere_iw02.cmp
+</dest>
+<source>
+[Ambient]
+color = 40, 50, 60
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw03\Iw03.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 65, 75, 85
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_noband.cmp
+complex_stars = solar\starsphere\starsphere_iw03_stars.cmp
+nebulae = solar\starsphere\starsphere_iw03.cmp
+</dest>
+<source>
+[Ambient]
+color = 65, 75, 85
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw04\Iw04.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 65, 65, 85
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_noband.cmp
+complex_stars = solar\starsphere\starsphere_iw04_stars.cmp
+nebulae = solar\starsphere\starsphere_iw04.cmp
+</dest>
+<source>
+[Ambient]
+color = 65, 65, 85
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw05\Iw05.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 10, 20, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow.cmp
+complex_stars = solar\starsphere\starsphere_iw05_stars.cmp
+nebulae = solar\starsphere\starsphere_iw05.cmp
+</dest>
+<source>
+[Ambient]
+color = 10, 20, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw06\Iw06.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 30, 40, 70
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow.cmp
+complex_stars = solar\starsphere\starsphere_iw06_stars.cmp
+nebulae = solar\starsphere\starsphere_iw06.cmp
+</dest>
+<source>
+[Ambient]
+color = 30, 40, 70
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku01\Ku01.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 40, 70, 100
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_ku01_stars.cmp
+nebulae = solar\starsphere\starsphere_ku01.cmp
+</dest>
+<source>
+[Ambient]
+color = 40, 70, 100
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku02\Ku02.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 50, 40, 100
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_ku02_stars.cmp
+nebulae = solar\starsphere\starsphere_ku02.cmp
+</dest>
+<source>
+[Ambient]
+color = 50, 40, 100
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku03\Ku03.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 35, 45, 65
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_ku03_stars.cmp
+nebulae = solar\starsphere\starsphere_ku03.cmp
+</dest>
+<source>
+[Ambient]
+color = 35, 45, 65
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku04\Ku04.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 30, 40, 90
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow.cmp
+complex_stars = solar\starsphere\starsphere_ku04_stars.cmp
+nebulae = solar\starsphere\starsphere_ku04.cmp
+</dest>
+<source>
+[Ambient]
+color = 30, 40, 90
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku05\Ku05.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 40, 50, 110
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_ku05_stars.cmp
+nebulae = solar\starsphere\starsphere_ku05.cmp
+</dest>
+<source>
+[Ambient]
+color = 40, 50, 110
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku07\Ku07.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 40, 40, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_ku07_stars.cmp
+nebulae = solar\starsphere\starsphere_ku07.cmp
+</dest>
+<source>
+[Ambient]
+color = 40, 40, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Li01\Li01.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 30, 50, 80
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+nebulae = solar\starsphere\starsphere_li01.cmp
+</dest>
+<source>
+[Ambient]
+color = 30, 50, 80
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Li02\Li02.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 25, 50, 80
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li02_stars.cmp
+nebulae = solar\starsphere\starsphere_li02.cmp
+</dest>
+<source>
+[Ambient]
+color = 25, 50, 80
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Li03\Li03.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 45, 50, 75
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow.cmp
+complex_stars = solar\starsphere\starsphere_li03_stars.cmp
+nebulae = solar\starsphere\starsphere_li03.cmp
+</dest>
+<source>
+[Ambient]
+color = 45, 50, 75
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Li04\Li04.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 40, 45, 55
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_walker.cmp
+complex_stars = solar\starsphere\starsphere_li04_stars.cmp
+nebulae = solar\starsphere\starsphere_li04.cmp
+</dest>
+<source>
+[Ambient]
+color = 40, 45, 55
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh01\Rh01.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 50, 40, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_walker.cmp
+complex_stars = solar\starsphere\starsphere_rh01_stars.cmp
+nebulae = solar\starsphere\starsphere_rh01.cmp
+</dest>
+<source>
+[Ambient]
+color = 50, 40, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh02\Rh02.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 30, 30, 30
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_rh02_stars.cmp
+nebulae = solar\starsphere\starsphere_rh02.cmp
+</dest>
+<source>
+[Ambient]
+color = 30, 30, 30
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh03\Rh03.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 40, 40, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_rh03_stars.cmp
+nebulae = solar\starsphere\starsphere_rh03.cmp
+</dest>
+<source>
+[Ambient]
+color = 40, 40, 40
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh04\Rh04.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 50, 50, 50
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_crow_walker.cmp
+complex_stars = solar\starsphere\starsphere_rh04_stars.cmp
+nebulae = solar\starsphere\starsphere_rh04.cmp
+</dest>
+<source>
+[Ambient]
+color = 50, 50, 50
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh05\Rh05.ini" method="filereplace" numtimes="0" options="2:2">
+<dest>
+[Ambient]
+color = 120, 80, 20
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_caps.cmp
+complex_stars = solar\starsphere\starsphere_rh05_stars.3db
+nebulae = solar\starsphere\starsphere_rh05.cmp
+</dest>
+<source>
+[Ambient]
+color = 120, 80, 20
+
+[Background]
+basic_stars = solar\starsphere\starsphere_stars_basic.cmp
+complex_stars = solar\starsphere\starsphere_li01_stars.cmp
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Br01\Br01.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 60, 20, 10
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Br02\Br02.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 35, 30, 40
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Br03\Br03.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 40, 25, 55
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Br04\Br04.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 65, 35, 10
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Br04\Br04.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+space_color = 50, 30, 10
+</dest>
+<source>
+space_color = 0, 0, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Br05\Br05.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 80, 50, 0
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Br06\Br06.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 55, 20, 30
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw01\Bw01.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 25, 35, 45
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw02\Bw02.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 20, 50, 60
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw03\Bw03.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 40, 30, 20
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw04\Bw04.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 60, 40, 20
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw05\Bw05.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 60, 80, 100
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw06\Bw06.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 25, 55, 45
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw07\Bw07.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 20, 30, 60
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw08\Bw08.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 60, 70, 70
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw09\Bw09.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 40, 50, 60
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw10\Bw10.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 90, 90, 110
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw10\Bw10.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+space_color = 90, 90, 110
+</dest>
+<source>
+space_color = 0, 0, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew01\Ew01.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 80, 100, 140
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew01\Ew01.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+space_color = 10, 40, 80
+</dest>
+<source>
+space_color = 0, 0, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew02\Ew02.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 10, 15, 12
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew03\Ew03.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 55, 65, 70
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew04\Ew04.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 40, 70, 30
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\FP7\FP7_system.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 35, 35, 35
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Hi01\Hi01.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 30, 60, 40
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Hi02\Hi02.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 40, 80, 50
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw01\Iw01.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 30, 30, 30
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw02\Iw02.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 40, 50, 60
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw03\Iw03.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 65, 75, 85
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw04\Iw04.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 65, 65, 85
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw05\Iw05.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 10, 20, 40
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Iw06\Iw06.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 30, 40, 70
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku01\Ku01.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 40, 70, 100
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku02\Ku02.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 50, 40, 100
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku03\Ku03.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 35, 45, 65
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku04\Ku04.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 30, 40, 90
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku05\Ku05.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 40, 50, 110
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Ku07\Ku07.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 40, 40, 40
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Li01\Li01.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 30, 50, 80
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Li02\Li02.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 25, 50, 80
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Li03\Li03.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 45, 50, 75
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Li04\Li04.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 40, 45, 55
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh01\Rh01.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 50, 40, 40
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh02\Rh02.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 30, 30, 30
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh03\Rh03.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 40, 40, 40
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh04\Rh04.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 50, 50, 50
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh05\Rh05.ini" method="filereplace" numtimes="0" options="2:3">
+<dest>
+[Ambient]
+color = 120, 80, 20
+</dest>
+<source>
+[Ambient]
+color = 5, 5, 5
+</source>
+</data>
+
+;///////////////////////////////////////////////
+;	Ambient Explosions Size
+<data file="data\fx\effects.ini" method="sectionreplace" options="4:2">
+<section>
+[Effect]
+nickname = battle_ambient_explosion
+</section>
+<dest>
+vis_effect = gf_ambient_explosion
+snd_effect = battle_ambient
+</dest>
+<source>
+vis_effect = rtc_stungunidle
+</source>
+</data>
+<data file="data\fx\effects.ini" method="sectionreplace" options="4:1">
+<section>
+[Effect]
+nickname = battle_ambient_explosion
+</section>
+<dest>
+vis_effect = gf_ambient_explosion
+snd_effect = battle_ambient
+</dest>
+<source>
+vis_effect = gf_explosion_super_flak
+snd_effect = battle_ambient
+</source>
+</data>
+<data file="data\fx\effects.ini" method="sectionreplace" options="4:0">
+<section>
+[Effect]
+nickname = battle_ambient_explosion
+</section>
+<dest>
+vis_effect = gf_ambient_explosion
+snd_effect = battle_ambient
+</dest>
+<source>
+vis_effect = gf_ambient_explosion
+snd_effect = battle_ambient
+</source>
+</data>
+<data file="data\fx\effects.ini" method="sectionreplace" options="4:3">
+<section>
+[Effect]
+nickname = battle_ambient_explosion
+</section>
+<dest>
+vis_effect = gf_ambient_explosion
+snd_effect = battle_ambient
+</dest>
+<source>
+vis_effect = gf_explosion_li_battleship_mainexpbig
+snd_effect = csx_large01
+</source>
+</data>
+
+;///////////////////////////////////////////////
+;	NUMERIC DISPLAYS
+<data file="EXE\calcing.dll" method="copyfile" sourcefile="EXE\calcing.dl_" options="8:1">
+</data>
+<data file="EXE\Display.dll" method="copyfile" sourcefile="EXE\Display.dl_" options="8:1">
+</data>
+
+;///////////////////////////////////////////////
+;	GLS Workaround
+<data file="EXE\gls_workaround.dll" method="copyfile" sourcefile="EXE\gls_workaround.dl_" options="200:1">
+</data>
+
+;///////////////////////////////////////////////
+;	SMALLER FONTS
+<data file="DATA\Fonts\fonts.ini" method="copyfile" sourcefile="DATA\Fonts\fonts.moep" options="102:1">
+</data>
+<data file="DATA\Fonts\rich_fonts.ini" method="copyfile" sourcefile="DATA\Fonts\rich_fonts.moep" options="102:1">
+</data>
+
+;///////////////////////////////////////////////
+;	HUDs
+; Dark - Blue
+<data file="DATA\INTERFACE\Intro\OBJECTS\front_loadingbar.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\DARKBLUE\front_loadingbar.cmp" options="5:1">
+</data>
+<data file="DATA\INTERFACE\Intro\OBJECTS\multi_attentionreq'd.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\DARKBLUE\multi_attentionreq'd.cmp" options="5:1">
+</data>
+<data file="DATA\INTERFACE\NEURONET\NAVMAP\NEWNAVMAP\zoomedmap_liberty.3db" method="copyfile" sourcefile="DATA\INTERFACE\custom\DARKBLUE\zoomedmap_liberty.3db" options="5:1">
+</data>
+; Red (Diamond)
+<data file="DATA\INTERFACE\Intro\OBJECTS\front_loadingbar.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\RED\front_loadingbar.cmp" options="5:2">
+</data>
+<data file="DATA\INTERFACE\Intro\OBJECTS\multi_attentionreq'd.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\RED\multi_attentionreq'd.cmp" options="5:2">
+</data>
+<data file="DATA\INTERFACE\NEURONET\NAVMAP\NEWNAVMAP\zoomedmap_liberty.3db" method="copyfile" sourcefile="DATA\INTERFACE\custom\RED\zoomedmap_liberty.3db" options="5:2">
+</data>
+; Alien
+<data file="DATA\INTERFACE\Intro\OBJECTS\front_loadingbar.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\GREENALIEN\front_loadingbar.cmp" options="5:3">
+</data>
+<data file="DATA\INTERFACE\Intro\OBJECTS\multi_attentionreq'd.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\GREENALIEN\multi_attentionreq'd.cmp" options="5:3">
+</data>
+<data file="DATA\INTERFACE\NEURONET\NAVMAP\NEWNAVMAP\zoomedmap_liberty.3db" method="copyfile" sourcefile="DATA\INTERFACE\custom\GREENALIEN\zoomedmap_liberty.3db" options="5:3">
+</data>
+; Klingon ???^^''
+<data file="DATA\INTERFACE\Intro\OBJECTS\front_loadingbar.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\IDK\front_loadingbar.cmp" options="5:4">
+</data>
+<data file="DATA\INTERFACE\Intro\OBJECTS\multi_attentionreq'd.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\IDK\multi_attentionreq'd.cmp" options="5:4">
+</data>
+<data file="DATA\INTERFACE\NEURONET\NAVMAP\NEWNAVMAP\zoomedmap_liberty.3db" method="copyfile" sourcefile="DATA\INTERFACE\custom\IDK\zoomedmap_liberty.3db" options="5:4">
+</data>
+; Klingon !
+<data file="DATA\INTERFACE\Intro\OBJECTS\front_loadingbar.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\KLINGON\front_loadingbar.cmp" options="5:5">
+</data>
+<data file="DATA\INTERFACE\Intro\OBJECTS\multi_attentionreq'd.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\KLINGON\multi_attentionreq'd.cmp" options="5:5">
+</data>
+<data file="DATA\INTERFACE\NEURONET\NAVMAP\NEWNAVMAP\zoomedmap_liberty.3db" method="copyfile" sourcefile="DATA\INTERFACE\KLINGON\05DARKBLUE\zoomedmap_liberty.3db" options="5:5">
+</data>
+; Green
+<data file="DATA\INTERFACE\Intro\OBJECTS\front_loadingbar.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\green\front_loadingbar.cmp" options="5:6">
+</data>
+<data file="DATA\INTERFACE\Intro\OBJECTS\multi_attentionreq'd.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\green\multi_attentionreq'd.cmp" options="5:6">
+</data>
+; Red (Accent)
+<data file="DATA\INTERFACE\Intro\OBJECTS\front_loadingbar.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\redaccent\front_loadingbar.cmp" options="5:7">
+</data>
+<data file="DATA\INTERFACE\Intro\OBJECTS\multi_attentionreq'd.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\redaccent\multi_attentionreq'd.cmp" options="5:7">
+</data>
+; Pink (ftw!)
+<data file="DATA\INTERFACE\Intro\OBJECTS\front_loadingbar.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\pink\front_loadingbar.cmp" options="5:8">
+</data>
+<data file="DATA\INTERFACE\Intro\OBJECTS\multi_attentionreq'd.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\pink\multi_attentionreq'd.cmp" options="5:8">
+</data>
+; Yellow
+<data file="DATA\INTERFACE\Intro\OBJECTS\front_loadingbar.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\yellow\front_loadingbar.cmp" options="5:9">
+</data>
+<data file="DATA\INTERFACE\Intro\OBJECTS\multi_attentionreq'd.cmp" method="copyfile" sourcefile="DATA\INTERFACE\custom\yellow\multi_attentionreq'd.cmp" options="5:9">
+</data>
+
+;//////////////////////////////////
+;	INTROS
+<data file="data\universe\universe.ini" method="sectionappend" options="6:2">
+<section>
+[Base]
+nickname = Intro3_Base
+system = Li01
+strid_name = 196766
+file = Universe\Systems\Intro\Bases\Intro3_Base.ini
+BGCS_base_run_by = W02bF35
+
+</section>
+<source>
+
+[Base]
+nickname = Intro4_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Juni_Dance.ini
+</source>
+</data>
+<data file="data\universe\universe.ini" method="sectionappend" options="6:1">
+<section>
+[Base]
+nickname = Intro3_Base
+system = Li01
+strid_name = 196766
+file = Universe\Systems\Intro\Bases\Intro3_Base.ini
+BGCS_base_run_by = W02bF35
+
+</section>
+<source>
+
+[Base]
+nickname = Intro4_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_Waterplanet.ini
+
+[Base]
+nickname = Intro5_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_Dreadnought.ini
+
+[Base]
+nickname = Intro6_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_Osiris.ini
+
+[Base]
+nickname = Intro7_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_Eagle.ini
+
+[Base]
+nickname = Intro8_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_Sabre.ini
+
+[Base]
+nickname = Intro9_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_Titan.ini
+
+[Base]
+nickname = Intro10_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_Sun.ini
+
+[Base]
+nickname = Intro11_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_AC.ini
+
+[Base]
+nickname = Intro12_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_Earth.ini
+
+[Base]
+nickname = Intro13_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_Mars.ini
+
+[Base]
+nickname = Intro14_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_Neptune.ini
+
+[Base]
+nickname = Intro15_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_FarMoon.ini
+
+[Base]
+nickname = Intro16_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_GearingUp.ini
+
+[Base]
+nickname = Intro17_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_NomadReturn.ini
+
+[Base]
+nickname = Intro18_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_Seto.ini
+
+[Base]
+nickname = Intro19_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\Intro_Underwaterruins.ini
+
+[Base]
+nickname = Intro20_Base
+strid_name = 1
+system = Li01
+file = Universe\Systems\Intro\Bases\juni_dance.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_waterplanet.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_Waterplanet.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_dreadnought.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_Dreadnought.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_osiris.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_Osiris.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_eagle.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_Eagle.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_sabre.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_Sabre.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_titan.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_Titan.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_sun.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_Sun.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_ac.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_AC.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_earth.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_Earth.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_mars.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_Mars.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_neptune.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_Neptune.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_farmoon.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_FarMoon.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_gearingup.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_GearingUp.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_nomadreturn.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_NomadReturn.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_seto.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_Seto.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\juni_dance.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Juni_Dance.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\juni_dance.ini" method="append" options="6:2" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Juni_Dance.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\intro_underwaterruins.ini" method="append" options="6:1" newfile="true">
+<source>
+[BaseInfo]
+start_room = Cityscape
+
+[Room]
+nickname = Cityscape
+file = Universe\Systems\Intro\Bases\Rooms\Intro_Underwaterruins.ini
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_waterplanet.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Intro_Waterplanet.thn
+
+[Room_Sound]
+music = music_sigma_space
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_dreadnought.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Liberty_Dreadnought.thn
+
+[Room_Sound]
+music = music_friendly_encouragement
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_osiris.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Intro_Osiris.thn
+
+[Room_Sound]
+music = music_iw_space
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_eagle.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Eagle.thn
+
+[Room_Sound]
+music = rtc_music_solemn_and_grave
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_sabre.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Sabre.thn
+
+[Room_Sound]
+music = rtc_music_solemn_and_grave
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_titan.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Titan.thn
+
+[Room_Sound]
+music = rtc_music_solemn_and_grave
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_sun.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Intro_Sun.thn
+
+[Room_Sound]
+music = music_omicron_space
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_ac.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Intro_AC.thn
+
+[Room_Sound]
+music = music_bar_ku02
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_earth.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Earth.thn
+
+[Room_Sound]
+music = music_failure
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_mars.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Mars.thn
+
+[Room_Sound]
+music = music_failure
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_neptune.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Neptune.thn
+
+[Room_Sound]
+music = music_failure
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_farmoon.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Intro_FarMoon.thn
+
+[Room_Sound]
+music = music_tau_danger
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_gearingup.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Intro_GearingUp.thn
+
+[Room_Sound]
+music = music_ku_battle
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_nomadreturn.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Intro_NomadReturn.thn
+
+[Room_Sound]
+music = music_omicron_space
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_seto.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Intro_Seto.thn
+
+[Room_Sound]
+music = music_ku_battle
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\intro_underwaterruins.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\Intro_Underwaterruins.thn
+
+[Room_Sound]
+music = music_anticipation_light
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\juni_dance.ini" method="append" options="6:1" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\juni_dance.thn
+
+[Room_Sound]
+music = music_bar_ku02
+</source>
+</data>
+<data file="data\universe\systems\intro\bases\rooms\juni_dance.ini" method="append" options="6:2" newfile="true">
+<source>
+[Room_Info]
+scene = ambient, Scripts\Intro\juni_dance.thn
+
+[Room_Sound]
+music = music_bar_ku02
+</source>
+</data>
+
+;//////////////////////////////////////
+;	MOUSE LAYOUT
+<data file="DATA\mouse.ini" method="copyfile" sourcefile="DATA\mouse.default" options="7:1">
+</data>
+<data file="DATA\mouse.ini" method="copyfile" sourcefile="DATA\mouse.special" options="7:2">
+</data>
+
+;//////////////////////////////////////
+;	ENGLISH AUDIO (UTF) FIXES
+<data file="DATA\Audio\atc_leg_f01.utf" method="copyfile" sourcefile="DATA\Audio\atc_leg_f01.fixaudio" options="11:1">
+</data>
+<data file="DATA\Audio\atc_leg_f01a.utf" method="copyfile" sourcefile="DATA\Audio\atc_leg_f01a.fixaudio" options="11:1">
+</data>
+<data file="DATA\Audio\atc_leg_m01.utf" method="copyfile" sourcefile="DATA\Audio\atc_leg_m01.fixaudio" options="11:1">
+</data>
+<data file="DATA\Audio\nnvoice.utf" method="copyfile" sourcefile="DATA\Audio\nnvoice.fixaudio" options="11:1">
+</data>
+<data file="DATA\Audio\trent_voice.utf" method="copyfile" sourcefile="DATA\Audio\trent_voice.fixaudio" options="11:1">
+</data>
+
+;//////////////////////////////////////
+;	SPACE FARCLIP ENABLING (yep every system :D)
+<data file="data\universe\systems\admin01\admin01.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\admin02\admin02.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+<data file="data\universe\systems\br01\br01.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\br02\br02.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\br03\br03.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\br04\br04.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\br05\br05.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\br06\br06.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+<data file="data\universe\systems\bw01\bw01.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\bw02\bw02.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\bw03\bw03.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\bw04\bw04.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\bw05\bw05.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\bw06\bw06.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\bw07\bw07.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\bw08\bw08.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\bw09\bw09.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\bw10\bw10.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\bw11\bw11.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+<data file="data\universe\systems\ew01\ew01.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\ew02\ew02.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\ew03\ew03.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\ew04\ew04.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\ew05\ew05.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\ew06\ew06.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+<data file="data\universe\systems\fp7\fp7_system.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+<data file="data\universe\systems\hi01\hi01.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\hi02\hi02.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\hi03\hi03.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+<data file="data\universe\systems\intro\intro.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+<data file="data\universe\systems\iw01\iw01.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\iw02\iw02.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\iw03\iw03.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\iw04\iw04.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\iw05\iw05.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\iw06\iw06.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+<data file="data\universe\systems\ku01\ku01.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\ku02\ku02.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\ku03\ku03.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\ku04\ku04.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\ku05\ku05.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\ku06\ku06.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\ku07\ku07.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+<data file="data\universe\systems\li01\li01.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\li02\li02.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\li03\li03.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\li04\li04.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\li05\li05.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\li06\li06.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+<data file="data\universe\systems\n00b01\n00b01.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\pvp01\pvp01.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\pvp02\pvp02.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+<data file="data\universe\systems\rh01\rh01.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\rh02\rh02.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\rh03\rh03.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\rh04\rh04.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\rh05\rh05.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\rh06\rh06.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+<data file="data\universe\systems\sol01\sol01.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+<data file="data\universe\systems\st01\st01.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\st02\st02.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\st02c\st02c.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\st03\st03.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\st03b\st03b.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+<data file="data\universe\systems\ST04\ST04.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+<data file="data\universe\systems\RACE01\RACE01.ini" method="sectionappend">
+<section>
+[SystemInfo]
+</section>
+<source>
+space_farclip = 100000
+</source>
+</data>
+
+; ///////////////////////////////////////////
+; PLANET SPINNING
+; This script is done by Warzog and Bob McDob, so if u use it give them the credits cause its a bunch of work.
+; it just has been adjusted by ***M.o.D.***
+<data file="Data\Universe\Systems\LI01\li01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li01_01
+</section>
+<source>
+spin = 0, -0.035, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\LI01\li01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li01_02
+</section>
+<source>
+spin = 0, 0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\LI01\li01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li01_planet_icemoon_800_1
+</section>
+<source>
+spin = 0, 0, 0.03
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Br01\Br01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Br01_planet_Dover
+</section>
+<source>
+spin = 0, -0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Br01\Br01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Br01_01
+</section>
+<source>
+spin = -0.03, 0, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Br02\Br02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Br02_planet_Jersey
+</section>
+<source>
+spin = 0.03, 0, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Br02\Br02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Br02_planet_Wight
+</section>
+<source>
+spin = 0, 0.03, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Br03\Br03.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Br03_01
+</section>
+<source>
+spin = 0, 0, 0.03
+</source>
+</data>
+<data file="Data\Universe\Systems\Br03\Br03.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Br03_Ross_planetoid
+</section>
+<source>
+spin = 0, 0, 0.03
+</source>
+</data>
+<data file="Data\Universe\Systems\Br03\Br03.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Br03_planet_Sarum
+</section>
+<source>
+ids_info = 66055
+spin = 0, 0, 0.03
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Br04\Br04.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Br04_planet_waterford
+</section>
+<source>
+spin = 0, 0, -0.03
+</source>
+</data>
+<data file="Data\Universe\Systems\Br04\Br04.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Br04_01
+</section>
+<source>
+spin = 0, -0.03, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Br06\Br06.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Br06_planet_Gaia
+</section>
+<source>
+spin = 0, 0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Br06\Br06.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Br06_planet_Ayr
+</section>
+<source>
+spin = 0, 0, 0.03
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Bw01\Bw01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Bw01_01
+</section>
+<source>
+spin = 0, 0, -0.03
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Bw04\Bw04.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Bw04_Schutz_planet
+</section>
+<source>
+spin = -0.03, 0, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw04\Bw04.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Bw04_planet_Deidus
+</section>
+<source>
+spin = -0.03, 0.100000, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Bw06\Bw06.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Bw06_01
+</section>
+<source>
+spin = 0.01, 0.03, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Bw07\Bw07.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Bw07_planet_Hiran
+</section>
+<source>
+ids_info = 66076
+spin = 0.02, 0.01, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw07\Bw07.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Bw07_planet_Hades
+</section>
+<source>
+ids_info = 66139
+spin = 0.01, 0.02, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Bw07\Bw07.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Bw07_planet_Cerebus
+</section>
+<source>
+ids_info = 66138
+spin = 0.02, 0.02, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Bw10\Bw10.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Bw10_01
+</section>
+<source>
+spin = 0, 0.03, 0.02
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Ew02\Ew02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Ew02_planet_Elysium
+</section>
+<source>
+ids_info = 66134
+spin = 0, 0.02, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Ew06\Ew06.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Ew06_robot_planet
+</section>
+<source>
+spin = 0, 0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Ew06\Ew06.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Ew06_planet_monkey
+</section>
+<source>
+spin = 0, 0.03, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Hi01\Hi01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Hi01_01
+</section>
+<source>
+spin = 0, 0.03, 0.01
+</source>
+</data>
+<data file="Data\Universe\Systems\Hi01\Hi01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Hi01_planet_Mallorca
+</section>
+<source>
+spin = 0, 0.03, -0.01
+</source>
+</data>
+<data file="Data\Universe\Systems\Hi01\Hi01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Hi01_moon_Prenta
+</section>
+<source>
+spin = 0, 0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Hi01\Hi01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Hi01_planet_Carinea
+</section>
+<source>
+ids_info = 66131
+spin = 0, 0.03, 0.01
+</source>
+</data>
+<data file="Data\Universe\Systems\Hi01\Hi01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Hi01_moon_Vesuvius
+</section>
+<source>
+spin = 0, 0.02, 0.02
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Hi02\Hi02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Hi02_01
+</section>
+<source>
+spin = 0, -0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Hi02\Hi02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Hi02_moon_Kalhmera
+</section>
+<source>
+ids_info = 66136
+spin = 0, 0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Hi02\Hi02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Hi02_planet_Cella_dor
+</section>
+<source>
+ids_info = 66135
+spin = 0, 0.02, 0.02
+</source>
+</data>
+
+<data file="Data\Universe\Systems\intro\intro.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li01_01
+</section>
+<source>
+spin = 0, -0.035, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\intro\intro.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li01_02
+</section>
+<source>
+spin = 0.03, 0, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\intro\intro.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li01_planet_icemoon_800_1
+</section>
+<source>
+spin = 0, 0, 0.03
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Iw02\Iw02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Iw02_planet_Atka
+</section>
+<source>
+spin = 0, -0.03, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Iw04\Iw04.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Iw04_01
+</section>
+<source>
+spin = 0, 0.03, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\ku01\ku01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Ku01_01
+</section>
+<source>
+spin = 0, 0.03, 0.02
+</source>
+</data>
+<data file="Data\Universe\Systems\ku01\ku01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Ku01_Fuji_planet
+</section>
+<source>
+spin = 0, 0.02, 0.03
+</source>
+</data>
+<data file="Data\Universe\Systems\ku01\ku01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Ku01_Kitadake_planet
+</section>
+<source>
+spin = 0.01, 0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\ku01\ku01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Ku01_planet_icemoon_800_1
+</section>
+<source>
+spin = 0, 0.060000, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\ku02\ku02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Ku02_Seto
+</section>
+<source>
+spin = 0, 0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\ku02\ku02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Ku02_04
+</section>
+<source>
+spin = 0, 0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\ku02\ku02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Ku02_fuchu_planetoid
+</section>
+<source>
+archetype = fuchu_core
+spin = 0, -0.03, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\ku03\ku03.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Ku03_Aso
+</section>
+<source>
+spin = 0, 0, 0.050000
+</source>
+</data>
+<data file="Data\Universe\Systems\ku03\ku03.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Ku03_01
+</section>
+<source>
+spin = 0, 0.03, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\ku04\ku04.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Ku04_01
+</section>
+<source>
+spin = 0, -0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\ku04\ku04.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Ku04_planet_Hikari
+</section>
+<source>
+ids_info = 66129
+spin = 0, 0.02, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Li02\Li02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li02_01
+</section>
+<source>
+spin = 0, -0.035, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Li02\Li02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li02_planet_Mojave
+</section>
+<source>
+spin = 0, -0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Li02\Li02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li02_02
+</section>
+<source>
+spin = 0, -0.035, 0.02
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Li03\Li03.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li03_01
+</section>
+<source>
+spin = 0, 0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Li03\Li03.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li03_planet_moonblu_2000_1
+</section>
+<source>
+spin = 0, 0.03, 0.02
+</source>
+</data>
+<data file="Data\Universe\Systems\Li03\Li03.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li03_planet_mercury_200_1
+</section>
+<source>
+spin = 0, -0.03, -0.02
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Li04\Li04.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li04_planet_Chisos
+</section>
+<source>
+spin = -0.02, 0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Li04\Li04.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li04_moon_Abilene
+</section>
+<source>
+ids_info = 66079
+spin = 0.02, 0.01, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Li04\Li04.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li04_planet_Brazos
+</section>
+<source>
+ids_info = 66080
+spin = 0.01, -0.02, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Li04\Li04.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Li04_01
+</section>
+<source>
+ids_info = 65873
+spin = -0.01, -0.02, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Rh01\Rh01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Rh01_01
+</section>
+<source>
+spin = 0, -0.03, 0.02
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh01\Rh01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Rh01_moon_potsdam
+</section>
+<source>
+spin = 0.01, -0.035, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Rh02\Rh02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Rh02_01
+</section>
+<source>
+spin = 0, -0.03, 0.02
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh02\Rh02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Rh02_planet_Hannover
+</section>
+<source>
+spin = 0, -0.03, -0.02
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh02\Rh02.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Rh02_planet_Kiel
+</section>
+<source>
+spin = 0, -0.03, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Rh03\Rh03.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Rh03_01
+</section>
+<source>
+spin = -0.01, -0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh03\Rh03.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Rh03_02
+</section>
+<source>
+spin = -0.02, -0.03, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh03\Rh03.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Rh03_planet_Breisgau
+</section>
+<source>
+spin = 0, -0.03, 0.02
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh03\Rh03.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Rh03_Aalen_moon
+</section>
+<source>
+spin = -0.01, -0.03, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\Rh04\Rh04.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Rh04_01
+</section>
+<source>
+spin = -0.03, -0.01, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh04\Rh04.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Rh04_Munich
+</section>
+<source>
+spin = -0.02, -0.025000, 0
+</source>
+</data>
+<data file="Data\Universe\Systems\Rh04\Rh04.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = Rh04_moon_Stulingen
+</section>
+<source>
+spin = -0.01, -0.034000, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\St01\St01.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = St01_01_Base
+</section>
+<source>
+spin = 0, 0.035, 0
+</source>
+</data>
+
+<data file="Data\Universe\Systems\St03\St03.ini" method="sectionmodify" options="9:1">
+<section>
+[Object]
+nickname = St03_planet_desert_600_1
+</section>
+<source>
+spin = 0.035, 0, 0
+</source>
+</data>
+
+;////////////////////////////////////////////////
+;	LANGUAGE (resources.dll)
+<data file="EXE\resources.dll" method="copyfile" sourcefile="EXE\resourcesENG.moep" options="10:0">
+</data>
+<data file="EXE\resources.dll" method="copyfile" sourcefile="EXE\resourcesGER.moep" options="10:1">
+</data>
+
+; ///////////////////////////////////////////
+; 	HARDER MISSIONS ??? (still in testing)
+<data file="data\randommissions\killablesolars.ini" method="append">
+<source>
+[KillableSolar]
+nickname = rm_dreadnought_li_D1-D20
+solar_type = Big_Solar
+string_id = 5
+archetype = rm_l_dreadnought
+loadout = rm_l_dreadnought_li_01
+hitpoints = 50607, 50607
+difficulty = 0.018324, 16.458324
+pilot_choices = 1
+</source>
+</data>
+
+<data file="data\randommissions\killablesolars.ini" method="sectionappend">
+<section>
+[KillableSolar]
+nickname = rm_dreadnought_li_D1-D20
+</section>
+<source>
+faction = fc_lr_grp
+</source>
+</data>
+
+<data file="data\randommissions\killablesolars.ini" method="sectionappend">
+<section>
+[KillableSolar]
+nickname = rm_dreadnought_li_D1-D20
+</section>
+<source>
+faction = gd_bh_grp
+</source>
+</data>
+
+; Token HP Point MAGIC
+<data file="DATA\SHIPS\shiparch.ini" method="sectionappend" numTimes="-1">
+<section>
+[Ship]
+</section>
+<source>
+hp_type = hp_freighter_shield_generator, HpMount
+</source>
+</data>
+
+</script>
