@@ -6,6 +6,9 @@ So here we go:
 [~] <- slightly adjusted
 Lets hope its understandable ^^
 
+Mödys Capships 2.0281:			time spent: 5sec :D
+[~] ammolimit.dll .... yeah it's been a while since i looked around here :D
+
 Mödys Capships 2.028:			time spent: ~65min. oh yeah ***M.o.D.*** was here :D
 [~] seperated the cloaks from weapon_equip
 [~] german resource.dll
