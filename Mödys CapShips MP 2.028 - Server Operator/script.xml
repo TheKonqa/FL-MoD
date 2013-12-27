@@ -10,7 +10,7 @@ Chips, optimized for Mödys CapShips by ***M.o.D.***
 http://l-i4xx.xe.cx/
 </modurl>
 <modversion>
-2.026d
+2.028
 </modversion>
 <description>
 This mod allows the Server admin to choose things for his server :)
@@ -152,6 +152,13 @@ Have Fun =)
 <item id="4" name="Roger New London!">
 </item>
 <item id="5" name="Party @ all Major House & Sector Places">
+</item>
+</option>
+
+<option id="9" name="Treat all members of a group as mine owners?" savesafe="true">
+<item id="0" name="No (Vanilla)">
+</item>
+<item id="1" name="Yeah!">
 </item>
 </option>
 
@@ -1257,6 +1264,11 @@ faction = co_os_grp, 10
 encounter = area_nomads, 19, 0.050000
 faction = fc_n_grp, 10
 </source>
+</data>
+
+;///////////////////////////////////////////////
+;	GROUP MINES
+<data file="EXE\groupmine.dll" method="copyfile" sourcefile="EXE\groupmine.dl_" options="8:1">
 </data>
 
 
