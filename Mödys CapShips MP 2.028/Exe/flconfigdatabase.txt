@@ -1,5 +1,5 @@
 //
-// Freelancer Config Database
+// Freelancer Config Database =)
 //
 //  SceneRenderer				// Scene based renderer (eg: PowerVR, Kyro etc...)
 //  NoAlphaTest					// Disable alpha test (conflicts with other modes)
