@@ -1,0 +1,48 @@
+Ship			cargopods	Holdsize with Pods (if every pod adds 200)	realistic holdsize balance
+Transport		2		400						390
+L. Transport		4		800						480
+Train			4		800						500
+L. Train		6		1600   ??? <-- rly?^^ (1600*alien organism (fp->cambridge) = ca. 2.2mill per run)
+V. L. Train		8		2000   ....  ^^''
+
+
+so we must create all kinds of cargo pods for each ship and use flhook item restriction per ship :S^^
++ a fair balance between the pods, cuz + non excisting in space, trades, etc.
+
+f.e.
+u buy a train at station X & u can pimp it there with f.e. 4 x train_crate_blue (125 cargo á pod)
+
+u buy a trainx3 at station Y & u can pimp it there with f.e. 6 x trainx3_crate_blue (250 cargo á pod)
+
+
+so pods need to be exponential expensive to make it "fair"
+
+
+available cargopods & crates  for creating equipment out of:
+(17 available items for each pod using ship (vanilla^^))
+
+cargo_consumer.3db
+cargo_food.3db
+
+crate_blue.3db
+crate_drab.3db
+crate_green.3db
+crate_grey.3db
+crate_red.3db
+crate_white.3db
+crate_yellow.3db
+
+pod_blue.3db
+pod_drab.3db
+pod_green.3db
+pod_grey.3db
+pod_red.3db
+pod_white.3db
+pod_yellow.3db
+
+update1:
+cargo pods are on hp_type = hp_fighter_shield_generator, HpCargo01, .... , so we dont need ship_item_restrictions ;)
+
+
+greetz,
+***M.o.D.*** :D  @ 2AM :D
