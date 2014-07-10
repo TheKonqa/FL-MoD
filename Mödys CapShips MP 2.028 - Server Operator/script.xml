@@ -1268,7 +1268,7 @@ faction = fc_n_grp, 10
 
 ;///////////////////////////////////////////////
 ;	GROUP MINES
-<data file="EXE\groupmine.dll" method="copyfile" sourcefile="EXE\groupmine.dl_" options="8:1">
+<data file="EXE\groupmine.dll" method="copyfile" sourcefile="EXE\groupmine.dl_" options="9:1">
 </data>
 
 
