@@ -1,0 +1,29 @@
+VERY IMPORTANT:
+tryin to fix flhook plugin <- [done by MoD :P]
+fix some more ship infocards and/or create new ones (especially the xl_trains & transporters)
+server operator npcs script fixes (due to MoD's crazy spawn overhaul^^ the sections @ the xmls must be fixed) <- done
+Sigma-? ;) <- RandomJumps implemented ... now someone needs to create the system :D <- done
+Fix old rep values at the /restart files
+
+NOT VERY IMPORTANT:
+get a good webspace & server ^^
+
+faction based tractor colors <- colors = done, loadouts = up next ver (hopefully^^) + maybe faction tokens @ npcs? (but i think that nobody will give a fuck about that^^)
+
+german||english resource.dll <- need to figure out the right impl.tation
+
+missions against nomads/8472s <- up next versions (hopefully^^) will take a while^^, faction is now implemented
+
+dynamic lighting <- must be redone [Addition by MoD: it will fail cuz of M$ and dx8 >_<]
+
+IDEAS:
+raid systems
+pvp systems <- done, but still a little bit boring
+fl hook update <- done to latest flhook classic & svn + kosa plugins
+fix bloom script <- done by ***M.o.D.***
+custom jumptunnels between certain areas, like greenish @ RH  & yellow/orange @ KU & red@BR <- still in testing
+spinning planets scripts <- done
+
+
+token hardpoints ;) @ hp_type = hp_fighter_shield_generator, SpConnect01 <- I decided to use HpMount :p 
+token icons =D

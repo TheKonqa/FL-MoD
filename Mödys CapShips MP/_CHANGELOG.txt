@@ -1,0 +1,90 @@
+Ok, i know its a little bit (like 3-4 years^^) belated but we didn't have a any proper changelog.
+So here we go:
+[+] <- added
+[-] <- removed
+[*] <- fixed
+[~] <- slightly adjusted
+Lets hope its understandable ^^
+
+Mödys Capships 2.0281:			time spent: 5sec :D
+[~] ammolimit.dll .... yeah it's been a while since i looked around here :D
+
+Mödys Capships 2.028:			time spent: ~65min. oh yeah ***M.o.D.*** was here :D
+[~] seperated the cloaks from weapon_equip
+[~] german resource.dll
+[~] special mouse.ini
+[~] SCRIPT.xml layout adjustments
+[+] missing ids_info strings for xlr_powers :)
+[~] Tokens:
+	Tokens are now [ShieldGenerator]
+	token hardpoints ;) @ hp_type = hp_freighter_shield_generator, HpMount
+	token_equip.ini & token_good.ini
+	added missing fake_no_grp (~]8472[~) token to goods
+	fixed dll strings :)
+[~] omicron_omega music ;) \m/
+[~] flhook config tweaks/adjustments & reintroduced flhook classic ^^
+	cuz some ppl like it more
+[~] updated ranges.dll
+[+] added first MP & SP mod merge
+	cuz SP appears mostly stable
+[+] added console.dll
+	cuz it r0x :p
+[~] market_commodities.ini -> reduced filesize by trimming the values jflp style
+[-] goods.ini -> player_base_crew
+Mödys Capships 2.027b:
+[~] newest flhook trunk
+[~] recompiled plugins :)
+[~] newest DSAM
+[+] acctpath_patch ;)
+[~] http://the-starport.net/freelancer/forum/viewtopic.php?post_id=56390#forumpost56390
+	i "fixed" the .cmp
+[+] hail.dll =)
+
+Mödys Capships 2.027:			
+[~*] newest jflp.dll (1.21) fixed several CTDs
+	(big thx to adoxa =) )
+[~] yet again disabled clientside flspew @ userdata ^^
+	(flclienterrors.log can still be used)
+
+Mödys Capships 2.026e:			
+[*] territorymp settings are now serverside
+
+Mödys Capships 2.026d:			time spent: 2 min.
+[~] we are now using 'sectionmodify' :p
+[*] removed some more unused cmps ^^
+[*] 88 Flak's bloom
+[~] changelog is now structured how it actually should be
+
+Mödys Capships 2.026c:			time spent: 5 min.
+[-] FlHook classic, if u want it back look at older releases
+[*] FLSever- and Freelancer.exe icon
+[~] special mouse layout
+[~] path files using flscan
+[~] misc_equip.ini some values
+[~] now we are officially using the resized kusari capship models
+	with Skotty's permissions :D
+[~] flhook update
+[-*] removed doubled ship cmps
+
+Mödys Capships 2.026b:			time spent: 30 min.
+[+] _used offset hacks.txt
+[~] some offset values
+[*] N00B01_02_Base Layout, NPCs & Rooms
+
+Mödys CapShips MP 2.026:			time spent: 25 min.
+[-] hudshift.dll & config
+[~] changed " |-l4xX " to " |-I4xX " @ dll strings
+[+] "tekagi magic" nomad city shield sur wont be loaded (so one can fly through it)
+[~] Version Number in the exe files is now 2.026
+	[~] reenabled dxdiag
+[~] FLHook Anticheat crcrs
+[~] Jumpholes in PVP01
+[~~] heavily adjusted FlyByU's mbases.ini due to JFLP 1.20 (thx to the winmerge devs ^^)
+	[*] rumors, fixtures, npc names, faction weights
+	[*] MS employees typos :D
+	[~] lots of float values
+
+Mödys CapShips MP 2.024j:			time spent: 5 min.
+[+] initial starting a changelog
+[-] unused effects like gf_sun_blue
+[*] FLHook plugins now load *.ini files again

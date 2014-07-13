@@ -1,0 +1,17 @@
+FreelancerExplorer Function Trace Log:
+Debug : Direct3D Interface created 
+Debug : Dx9 Format supported 
+Debug : Failed to create the DX9 device 
+Debug : Valid Dx9 Config: Devtype = 1 behaviour = 40 depth = 4D
+ 
+Debug : Dx9 Device Created 
+Debug : InitD3D Done 
+Debug : InitGeometry started 
+Debug : Loading UTF 
+Debug : D:\Programme(x86)\Freelancer Mod Manager\mods\Disco 4.87.0\DATA\SOLAR\DOCKABLE\PLAYERBASE\playerbase_01.cmp 
+Debug : Loading Texture 
+Debug : Texture Loaded 
+Debug : Loading UTF 
+Debug : D:\Programme(x86)\Freelancer Mod Manager\mods\Disco 4.87.0\DATA\SOLAR\DOCKABLE\PLAYERBASE\playerbase.mat 
+Debug : Assigning Textures 
+-->CHardPointEditorDlg::PreTranslateMessage (.\HardPointEditorDlg.cpp)

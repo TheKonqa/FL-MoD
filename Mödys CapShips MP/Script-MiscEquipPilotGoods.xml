@@ -1,0 +1,2905 @@
+<script>
+<scriptversion>
+1.3
+</scriptversion>
+; ////////////////////////////////////////////////////////////
+; CARGOPODS Market places (shipyards) TEST
+<data file="DATA\EQUIPMENT\market_misc.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Br01_02_base
+</section>
+<source>
+MarketGood = cst_cargopod_red, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_blue, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_green, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_yellow, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_white, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_drab, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_grey, 30, -1, 10, 10, 0, 1
+
+</source>
+</data>
+
+<data file="DATA\EQUIPMENT\market_misc.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Hi02_02_base
+</section>
+<source>
+MarketGood = cst_cargopod_red, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_blue, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_green, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_yellow, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_white, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_drab, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_grey, 30, -1, 10, 10, 0, 1
+
+</source>
+</data>
+
+<data file="DATA\EQUIPMENT\market_misc.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Ku04_03_base
+</section>
+<source>
+MarketGood = cst_cargopod_red, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_blue, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_green, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_yellow, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_white, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_drab, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_grey, 30, -1, 10, 10, 0, 1
+
+</source>
+</data>
+
+<data file="DATA\EQUIPMENT\market_misc.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Li01_07_base
+</section>
+<source>
+MarketGood = cst_cargopod_red, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_blue, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_green, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_yellow, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_white, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_drab, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_grey, 30, -1, 10, 10, 0, 1
+
+</source>
+</data>
+
+<data file="DATA\EQUIPMENT\market_misc.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Rh02_04_base
+</section>
+<source>
+MarketGood = cst_cargopod_red, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_blue, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_green, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_yellow, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_white, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_drab, 30, -1, 10, 10, 0, 1
+MarketGood = cst_cargopod_grey, 30, -1, 10, 10, 0, 1
+
+</source>
+</data>
+
+; ////////////////////////////////////////////////////////////
+; MISC EQUIP 
+<data file="DATA\EQUIPMENT\misc_equip.ini" method="append">
+<source>
+[Scanner]
+nickname = ge_s_scanner_01
+ids_name = 0 ;GENERATESTRRES("Scanner")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>Scanner</TEXT><PARA/><TEXT></TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT>Range: 2500m</TEXT><PARA/><TEXT>Cargo Scan Range: 2000m</TEXT><PARA/><PARA/><POP/></RDL>")
+volume = 0
+mass = 10
+range = 2500
+cargo_scan_range = 2000
+lootable = true
+
+[Scanner]
+nickname = ge_s_scanner_02
+ids_name = 0 ;GENERATESTRRES("Deep Scanner")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>Deep Scanner</TEXT><PARA/><TEXT></TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT>Range: 4500m</TEXT><PARA/><TEXT>Cargo Scan Range: 2500m</TEXT><PARA/><PARA/><POP/></RDL>")
+volume = 0
+mass = 10
+range = 4500
+cargo_scan_range = 2500
+lootable = true
+
+[Scanner]
+nickname = ge_s_scanner_03
+ids_name = 0 ;GENERATESTRRES("Advanced Deep Scanner")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>Advanced Deep Scanner</TEXT><PARA/><TEXT></TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT>Range: 7000m</TEXT><PARA/><TEXT>Cargo Scan Range: 3000m</TEXT><PARA/><PARA/><POP/></RDL>")
+volume = 0
+mass = 10
+range = 7000
+cargo_scan_range = 3000
+lootable = true
+
+[Scanner]
+nickname = ge_s_scanner_04
+ids_name = 0 ;GENERATESTRRES("Admin Scanner")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>Admin Scanner</TEXT><PARA/><TEXT></TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT>Range: 120000m</TEXT><PARA/><TEXT>Cargo Scan Range: 120000m</TEXT><PARA/><PARA/><POP/></RDL>")
+volume = 0
+mass = 10
+range = 120000
+cargo_scan_range = 120000
+lootable = false
+
+[Scanner]
+nickname = ge_s_scanner_05
+ids_name = 0 ;GENERATESTRRES("Nomad Scanner")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>Nomad Scanner</TEXT><PARA/><TEXT></TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT>Range: Unknown</TEXT><PARA/><TEXT>Cargo Scan Range: Unknown</TEXT><PARA/><PARA/><POP/></RDL>")
+volume = 0
+mass = 10
+range = 10000
+cargo_scan_range = 4000
+lootable = true
+
+[Scanner]
+nickname = ge_s_scanner_06
+ids_name = 0 ;GENERATESTRRES("Military Scanner")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>Military Scanner</TEXT><PARA/><TEXT></TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT>Range: 20000m</TEXT><PARA/><TEXT>Cargo Scan Range: 10000m</TEXT><PARA/><PARA/><POP/></RDL>")
+volume = 0
+mass = 10
+range = 20000
+cargo_scan_range = 10000
+lootable = false
+
+; Armor
+[Armor]
+nickname = armor1
+category = equipment
+HP_child = HPConnect
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 1")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 25%")
+hit_pts_scale = 1.250000
+explosion_resistance= 0.11
+DA_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+volume = 0
+mass = 25
+lootable=true
+
+[Armor]
+nickname = armor2
+category = equipment
+HP_child = HPConnect
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 2")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 50%")
+hit_pts_scale = 1.500000
+explosion_resistance= 0.26
+DA_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+volume = 0
+mass = 25
+lootable=true
+
+[Armor]
+nickname = armor3
+category = equipment
+HP_child = HPConnect
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 3")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 75%")
+hit_pts_scale = 1.750000
+explosion_resistance= 0.51
+DA_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+volume = 0
+mass = 25
+lootable=true
+
+[Armor]
+nickname = armor4
+category = equipment
+HP_child = HPConnect
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 4")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 100%")
+hit_pts_scale = 2.000000
+explosion_resistance= 0.76
+DA_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+volume = 0
+mass = 25
+lootable=true
+
+[Armor]
+nickname = armor5
+category = equipment
+HP_child = HPConnect
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 5")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 150%")
+hit_pts_scale = 2.500000
+explosion_resistance= 1.1
+DA_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+volume = 0
+mass = 25
+lootable=true
+
+[Armor]
+nickname = armor6
+category = equipment
+HP_child = HPConnect
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 6")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 200%")
+hit_pts_scale = 3.000000
+explosion_resistance= 1.6
+DA_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+volume = 0
+mass = 25
+lootable=true
+
+[Armor]
+nickname = armor7
+category = equipment
+HP_child = HPConnect
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 7")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 300%")
+hit_pts_scale = 4.000000
+explosion_resistance= 1.8
+DA_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+volume = 0
+mass = 25
+lootable=true
+
+[Armor]
+nickname = armor8
+category = equipment
+HP_child = HPConnect
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 8")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 400%")
+hit_pts_scale = 5.000000
+explosion_resistance= 2
+DA_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+volume = 0
+mass = 25
+lootable=true
+
+[Armor]
+nickname = armor9
+category = equipment
+HP_child = HPConnect
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 9")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 500%")
+hit_pts_scale = 6.000000
+explosion_resistance= 2.75
+DA_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+volume = 0
+mass = 25
+lootable=true
+
+[Armor]
+nickname = armor10
+category = equipment
+HP_child = HPConnect
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 10")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 600%")
+hit_pts_scale = 7.000000
+explosion_resistance= 3
+DA_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+volume = 0
+mass = 25
+lootable=true
+
+[Power]
+nickname = upgrade_power01
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 1")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 1    Energy Capacity = 3000 Regeneration rate = 400.")
+volume = 0
+mass = 10
+DA_archetype = equipment\models\hardware\li_fusion_reactor.3db
+material_library = equipment\models\hardware.mat
+capacity = 3000
+charge_rate = 400
+thrust_capacity = 1000
+thrust_charge_rate = 100
+lootable = false
+
+[Power]
+nickname = upgrade_power02
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 2")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 2    Energy Capacity = 3500 Regeneration rate = 450.")
+volume = 0
+mass = 10
+DA_archetype = equipment\models\hardware\li_fusion_reactor.3db
+material_library = equipment\models\hardware.mat
+capacity = 3500
+charge_rate = 450
+thrust_capacity = 1000
+thrust_charge_rate = 100
+lootable = false
+
+[Power]
+nickname = upgrade_power03
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 3")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 3    Energy Capacity = 4000 Regeneration rate = 500.")
+volume = 0
+mass = 10
+DA_archetype = equipment\models\hardware\li_fusion_reactor.3db
+material_library = equipment\models\hardware.mat
+capacity = 4000
+charge_rate = 500
+thrust_capacity = 1000
+thrust_charge_rate = 100
+lootable = false
+
+[Power]
+nickname = upgrade_power04
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 4")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 4   Energy Capacity = 6000 Regeneration rate = 700.")
+volume = 0
+mass = 10
+DA_archetype = equipment\models\hardware\li_fusion_reactor.3db
+material_library = equipment\models\hardware.mat
+capacity = 6000
+charge_rate = 700
+thrust_capacity = 1000
+thrust_charge_rate = 105
+lootable = false
+
+[Power]
+nickname = upgrade_power05
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 5")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 5   Energy Capacity = 8000 Regeneration rate = 900.")
+volume = 0
+mass = 10
+DA_archetype = equipment\models\hardware\li_fusion_reactor.3db
+material_library = equipment\models\hardware.mat
+capacity = 8000
+charge_rate = 900
+thrust_capacity = 1000
+thrust_charge_rate = 100
+lootable = false
+
+[Power]
+nickname = upgrade_power06
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 6")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 6   Energy Capacity = 10000 Regeneration rate = 1100.")
+volume = 0
+mass = 10
+DA_archetype = equipment\models\hardware\li_fusion_reactor.3db
+material_library = equipment\models\hardware.mat
+capacity = 10000
+charge_rate = 1100
+thrust_capacity = 1000
+thrust_charge_rate = 100
+lootable = false
+
+[Power]
+nickname = upgrade_power07
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 7")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 7    Capacity = 12000 Regeneration rate = 1300.")
+volume = 0
+mass = 10
+DA_archetype = equipment\models\hardware\li_fusion_reactor.3db
+material_library = equipment\models\hardware.mat
+capacity = 12000
+charge_rate = 1300
+thrust_capacity = 1000
+thrust_charge_rate = 100
+lootable = true
+
+[Power]
+nickname = upgrade_power08
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 8")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 8   Energy Capacity = 14000 Regeneration rate = 1500.")
+volume = 0
+mass = 10
+DA_archetype = equipment\models\hardware\li_fusion_reactor.3db
+material_library = equipment\models\hardware.mat
+capacity = 14000
+charge_rate = 1500
+thrust_capacity = 1000
+thrust_charge_rate = 100
+lootable = true
+
+[Power]
+nickname = upgrade_power09
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 9")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 9   Energy Capacity = 17000 Regeneration rate = 1800.")
+volume = 0
+mass = 10
+DA_archetype = equipment\models\hardware\li_fusion_reactor.3db
+material_library = equipment\models\hardware.mat
+capacity = 17000
+charge_rate = 1800
+thrust_capacity = 1000
+thrust_charge_rate = 100
+lootable = false
+
+[Power]
+nickname = upgrade_power10
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 10")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 10   Energy Capacity = 20000 Regeneration rate = 2100.")
+volume = 0
+mass = 10
+DA_archetype = equipment\models\hardware\li_fusion_reactor.3db
+material_library = equipment\models\hardware.mat
+capacity = 20000
+charge_rate = 2100
+thrust_capacity = 1000
+thrust_charge_rate = 100
+lootable = false
+
+</source>
+</data>
+
+<data file="DATA\EQUIPMENT\misc_good.ini" method="append">
+<source>
+[Good]
+nickname = ge_s_scanner_01
+equipment = ge_s_scanner_01
+category = equipment
+ids_name = 0 ;GENERATESTRRES("Scanner")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>Scanner</TEXT><PARA/><TEXT></TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT>Range: 2500m</TEXT><PARA/><TEXT>Cargo Scan Range: 2000m</TEXT><PARA/><PARA/><POP/></RDL>")
+price = 500
+combinable = false
+item_icon = equipment\models\commodities\nn_icons\equipicon_radarjammer.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+
+[Good]
+nickname = ge_s_scanner_02
+equipment = ge_s_scanner_02
+category = equipment
+ids_name = 0 ;GENERATESTRRES("Deep Scanner")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>Deep Scanner</TEXT><PARA/><TEXT></TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT>Range: 4500m</TEXT><PARA/><TEXT>Cargo Scan Range: 2500m</TEXT><PARA/><PARA/><POP/></RDL>")
+price = 1000
+combinable = false
+item_icon = equipment\models\commodities\nn_icons\equipicon_radarjammer.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+
+[Good]
+nickname = ge_s_scanner_03
+equipment = ge_s_scanner_03
+category = equipment
+ids_name = 0 ;GENERATESTRRES("Advanced Deep Scanner")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>Advanced Deep Scanner</TEXT><PARA/><TEXT></TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT>Range: 7000m</TEXT><PARA/><TEXT>Cargo Scan Range: 3000m</TEXT><PARA/><PARA/><POP/></RDL>")
+price = 3000
+combinable = false
+item_icon = equipment\models\commodities\nn_icons\equipicon_radarjammer.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+
+[Good]
+nickname = ge_s_scanner_04
+equipment = ge_s_scanner_04
+category = equipment
+ids_name = 0 ;GENERATESTRRES("Admin Scanner")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>Admin Scanner</TEXT><PARA/><TEXT></TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT>Range: 120000m</TEXT><PARA/><TEXT>Cargo Scan Range: 120000m</TEXT><PARA/><PARA/><POP/></RDL>")
+price = 1
+combinable = false
+item_icon = equipment\models\commodities\nn_icons\equipicon_radarjammer.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+
+
+[Good]
+nickname = ge_s_scanner_05
+equipment = ge_s_scanner_05
+category = equipment
+ids_name = 0 ;GENERATESTRRES("Nomad Scanner")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>Nomad Scanner</TEXT><PARA/><TEXT></TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT>Range: Unknown</TEXT><PARA/><TEXT>Cargo Scan Range: Unknown</TEXT><PARA/><PARA/><POP/></RDL>")
+price = 10000
+combinable = false
+item_icon = equipment\models\commodities\nn_icons\equipicon_radarjammer.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+
+[Good]
+nickname = ge_s_scanner_06
+equipment = ge_s_scanner_06
+category = equipment
+ids_name = 0 ;GENERATESTRRES("Military Scanner")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>Military Scanner</TEXT><PARA/><TEXT></TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT>Range: 20000m</TEXT><PARA/><TEXT>Cargo Scan Range: 10000m</TEXT><PARA/><PARA/><POP/></RDL>")
+price = 300000
+combinable = false
+item_icon = equipment\models\commodities\nn_icons\equipicon_radarjammer.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+
+[Good]
+nickname = ge_s_tractor_01
+equipment = ge_s_tractor_01
+category = equipment
+ids_name = 0 ;GENERATESTRRES("Tractor Beam")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>Tractor Beam</TEXT><PARA/><TEXT></TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT>Range: 3000m</TEXT><PARA/><TEXT>Extend Speed: 5000m/s</TEXT><PARA/><TEXT>Capacity: kilos</TEXT><PARA/><PARA/><POP/></RDL>")
+price = 250
+item_icon = equipment\models\commodities\nn_icons\transport.3db
+combinable = False
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+
+[Good]
+nickname = armor1
+equipment = armor1
+category = equipment
+price = 250000
+item_icon = Equipment\models\commodities\nn_icons\COMMOD_hullpanels.3db
+combinable = false
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 1")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 25%")
+shop_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+
+[Good]
+nickname = armor2
+equipment = armor2
+category = equipment
+price = 500000
+item_icon = Equipment\models\commodities\nn_icons\COMMOD_hullpanels.3db
+combinable = false
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 2")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 50%")
+shop_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+
+[Good]
+nickname = armor3
+equipment = armor3
+category = equipment
+price = 750000
+item_icon = Equipment\models\commodities\nn_icons\COMMOD_hullpanels.3db
+combinable = false
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 3")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 75%")
+shop_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+
+[Good]
+nickname = armor4
+equipment = armor4
+category = equipment
+price = 1000000
+item_icon = Equipment\models\commodities\nn_icons\COMMOD_hullpanels.3db
+combinable = false
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 4")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 100%")
+shop_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+
+[Good]
+nickname = armor5
+equipment = armor5
+category = equipment
+price = 1500000
+item_icon = Equipment\models\commodities\nn_icons\COMMOD_hullpanels.3db
+combinable = false
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 5")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 150%")
+shop_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+
+[Good]
+nickname = armor6
+equipment = armor6
+category = equipment
+price = 2000000
+item_icon = Equipment\models\commodities\nn_icons\COMMOD_hullpanels.3db
+combinable = false
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 6")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 200%")
+shop_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+
+[Good]
+nickname = armor7
+equipment = armor7
+category = equipment
+price = 3000000
+item_icon = Equipment\models\commodities\nn_icons\COMMOD_hullpanels.3db
+combinable = false
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 7")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 300%")
+shop_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+
+[Good]
+nickname = armor8
+equipment = armor8
+category = equipment
+price = 4000000
+item_icon = Equipment\models\commodities\nn_icons\COMMOD_hullpanels.3db
+combinable = false
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 8")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 400%")
+shop_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+
+[Good]
+nickname = armor9
+equipment = armor9
+category = equipment
+price = 5000000
+item_icon = Equipment\models\commodities\nn_icons\COMMOD_hullpanels.3db
+combinable = false
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 9")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 500%")
+shop_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+
+[Good]
+nickname = armor10
+equipment = armor10
+category = equipment
+price = 7500000
+item_icon = Equipment\models\commodities\nn_icons\COMMOD_hullpanels.3db
+combinable = false
+ids_name = 0 ;GENERATESTRRES("Armor Plating Class 10")
+ids_info = 0 ;GENERATESTRRES("Increase Ship Hull by 600%")
+shop_archetype = equipment\models\hardware\br_protective_armor.3db
+material_library = equipment\models\hardware.mat
+
+
+[Good]
+nickname = upgrade_power01
+equipment = upgrade_power01
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 1")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 1 Capacity = 3000 Regeneration rate = 400.")
+category = equipment
+price = 600000
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+combinable = false
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+
+[Good]
+nickname = upgrade_power02
+equipment = upgrade_power02
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 2")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 2    Energy Capacity = 3500 Regeneration rate = 450.")
+category = equipment
+price = 783750
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = upgrade_power03
+equipment = upgrade_power03
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 3")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 3    Energy Capacity = 4000 Regeneration rate = 500.")
+category = equipment
+price = 1000000
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = upgrade_power04
+equipment = upgrade_power04
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 4")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 4    Energy Capacity = 5000 Regeneration rate = 600.")
+category = equipment
+price = 1500000
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = upgrade_power05
+equipment = upgrade_power05
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 5")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 5    Energy Capacity = 6000 Regeneration rate = 700.")
+category = equipment
+price = 2100000
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = upgrade_power06
+equipment = upgrade_power06
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 6")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 6    Energy Capacity = 8000 Regeneration rate = 900.")
+category = equipment
+price = 3600000
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = upgrade_power07
+equipment = upgrade_power07
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 7")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 7    Energy Capacity = 10000 Regeneration rate = 1100.")
+category = equipment
+price = 5500000
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = upgrade_power08
+equipment = upgrade_power08
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 8")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 8    Energy Capacity = 12000 Regeneration rate = 1300.")
+category = equipment
+price = 7800000
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = upgrade_power09
+equipment = upgrade_power09
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 9")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 9    Energy Capacity = 14000 Regeneration rate = 1500.")
+category = equipment
+price = 10500000
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = upgrade_power10
+equipment = upgrade_power10
+ids_name = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 10")
+ids_info = 0 ;GENERATESTRRES("Dark Matter Power Plant MK 10    Energy Capacity = 17000 Regeneration rate = 1800.")
+category = equipment
+price = 15300000
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = bw_fighter_power01
+equipment = bw_fighter_power01
+ids_name = 0 ;GENERATESTRRES("Marauder Power Plant BEF1")
+ids_info = 0 ;GENERATEXMLRES("Marauder Power Plant BWF1    Energy Capacity: 2540 Regeneration Rate / sec: 250")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = pi_fighter_power01
+equipment = pi_fighter_power01
+ids_name = 0 ;GENERATESTRRES("Marauder Power Plant PF2")
+ids_info = 0 ;GENERATEXMLRES("Marauder Power Plant PF2    Energy Capacity: 1700 Regeneration Rate / sec: 177")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = co_fighter_power01
+equipment = co_fighter_power01
+ids_name = 0 ;GENERATESTRRES("Marauder Power Plant C3")
+ids_info = 0 ;GENERATEXMLRES("Marauder Power Plant C3    Energy Capacity: 2750 Regeneration Rate / sec: 278")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = pi_freighter_power01
+equipment = pi_freighter_power01
+ids_name = 0 ;GENERATESTRRES("Marauder Power Plant PFR4")
+ids_info = 0 ;GENERATEXMLRES("Marauder Power Plant PFR4    Energy Capacity: 2200 Regeneration Rate / sec: 220")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = bw_elite_power01
+equipment = bw_elite_power01
+ids_name = 0 ;GENERATESTRRES("Marauder Power Plant BWE6")
+ids_info = 0 ;GENERATEXMLRES("Marauder Power Plant BWE6    Energy Capacity: 5170 Regeneration Rate / sec: 515")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = pi_elite_power01
+equipment = pi_elite_power01
+ids_name = 0 ;GENERATESTRRES("Marauder Power Plant PE7")
+ids_info = 0 ;GENERATEXMLRES("Marauder Power Plant PE7    Energy Capacity: 3700 Regeneration Rate / sec: 375")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = bw_freighter_power01
+equipment = bw_freighter_power01
+ids_name = 0 ;GENERATESTRRES("Marauder Power Plant BWFR8")
+ids_info = 0 ;GENERATEXMLRES("Marauder Power Plant BWFR8    Energy Capacity: 12000 Regeneration Rate / sec: 1200")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = co_elite_power01
+equipment = co_elite_power01
+ids_name = 0 ;GENERATESTRRES("Marauder Power Plant CE9")
+ids_info = 0 ;GENERATEXMLRES("Marauder Power Plant CE9    Energy Capacity: 9750 Regeneration Rate / sec: 970")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = bw_elite2_power01
+equipment = bw_elite2_power01
+ids_name = 0 ;GENERATESTRRES("Marauder Power Plant BWE210")
+ids_info = 0 ;GENERATEXMLRES("Marauder Power Plant BWE210    Energy Capacity: 12000 Regeneration Rate / sec: 1200")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = co_elite2_power01
+equipment = co_elite2_power01
+ids_name = 0 ;GENERATESTRRES("Marauder Power Plant CE211")
+ids_info = 0 ;GENERATEXMLRES("Marauder Power Plant CE211    Energy Capacity: 12000 Regeneration Rate / sec: 1200")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = ge_fighter_power01
+equipment = ge_fighter_power01
+ids_name = 0 ;GENERATESTRRES("Civilian Power Plant GF1")
+ids_info = 0 ;GENERATEXMLRES("Civilian Power Plant GF1    Energy Capacity: 1100 Regeneration Rate / sec: 110")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = ge_fighter2_power01
+equipment = ge_fighter2_power01
+ids_name = 0 ;GENERATESTRRES("Civilian Power Plant GF2")
+ids_info = 0 ;GENERATEXMLRES("Civilian Power Plant GF2    Energy Capacity: 1980 Regeneration Rate / sec: 193")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = bh_fighter_power01
+equipment = bh_fighter_power01
+ids_name = 0 ;GENERATESTRRES("Civilian Power Plant BHF3")
+ids_info = 0 ;GENERATEXMLRES("Civilian Power Plant BHF3    Energy Capacity: 2000 Regeneration Rate / sec: 200")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = ge_fighter4_power01
+equipment = ge_fighter4_power01
+ids_name = 0 ;GENERATESTRRES("Civilian Power Plant GF44")
+ids_info = 0 ;GENERATEXMLRES("Civilian Power Plant GF44    Energy Capacity: 3740 Regeneration Rate / sec: 375")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = bh_elite_power01
+equipment = bh_elite_power01
+ids_name = 100
+ids_name = 0 ;GENERATESTRRES("Civilian Power Plant BHE5")
+ids_info = 0 ;GENERATEXMLRES("Civilian Power Plant BHE5    Energy Capacity: 3800 Regeneration Rate / sec: 400")
+price = 3800000
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = ge_fighter5_power01
+equipment = ge_fighter5_power01
+ids_name = 0 ;GENERATESTRRES("Civilian Power Plant GF56")
+ids_info = 0 ;GENERATEXMLRES("Civilian Power Plant GF56    Energy Capacity: 7040 Regeneration Rate / sec: 705")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = ge_fighter6_power01
+equipment = ge_fighter6_power01
+ids_name = 0 ;GENERATESTRRES("Civilian Power Plant GF67")
+ids_info = 0 ;GENERATEXMLRES("Civilian Power Plant GF67    Energy Capacity: 12000 Regeneration Rate / sec: 1200")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = bh_elite2_power01
+equipment = bh_elite2_power01
+ids_name = 0 ;GENERATESTRRES("Civilian Power Plant BHE28")
+ids_info = 0 ;GENERATEXMLRES("Civilian Power Plant BHE28    Energy Capacity: 12000 Regeneration Rate / sec: 1200")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = li_fighter_power01
+equipment = li_fighter_power01
+ids_name = 0 ;GENERATESTRRES("Palatine Powerplant LF1")
+ids_info = 0 ;GENERATEXMLRES("Palatine Powerplant LF1    Energy Capacity: 1500 Regeneration Rate / sec: 150")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = li_freighter_power01
+equipment = li_freighter_power01
+ids_name = 0 ;GENERATESTRRES("Palatine Powerplant LFR2")
+ids_info = 0 ;GENERATEXMLRES("Palatine Powerplant LFR2    Energy Capacity: 1500 Regeneration Rate / sec: 150")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = li_elite_power01
+equipment = li_elite_power01
+ids_name = 0 ;GENERATESTRRES("Palatine Powerplant LE3")
+ids_info = 0 ;GENERATEXMLRES("Palatine Powerplant LE3    Energy Capacity: 1800 Regeneration Rate / sec: 200")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = br_fighter_power01
+equipment = br_fighter_power01
+ids_name = 0 ;GENERATESTRRES("Palatine Powerplant BF4")
+ids_info = 0 ;GENERATEXMLRES("Palatine Powerplant BF4    Energy Capacity: 2310 Regeneration Rate / sec: 213")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = br_freighter_power01
+equipment = br_freighter_power01
+ids_name = 0 ;GENERATESTRRES("Palatine Powerplant BFR5")
+ids_info = 0 ;GENERATEXMLRES("Palatine Powerplant BFR5    Energy Capacity: 2000 Regeneration Rate / sec: 200")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = br_elite_power01
+equipment = br_elite_power01
+ids_name = 0 ;GENERATESTRRES("Palatine Powerplant BE6")
+ids_info = 0 ;GENERATEXMLRES("Palatine Powerplant BE6    Energy Capacity: 2750 Regeneration Rate / sec: 278")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = ku_fighter_power01
+equipment = ku_fighter_power01
+ids_name = 0 ;GENERATESTRRES("Palatine Powerplant KF7")
+ids_info = 0 ;GENERATEXMLRES("Palatine Powerplant KF7    Energy Capacity: 3200 Regeneration Rate / sec: 320")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = ku_freighter_power01
+equipment = ku_freighter_power01
+ids_name = 0 ;GENERATESTRRES("Palatine Powerplant KFR8")
+ids_info = 0 ;GENERATEXMLRES("Palatine Powerplant KFR8    Energy Capacity: 3000 Regeneration Rate / sec: 300")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = ku_elite_power01
+equipment = ku_elite_power01
+ids_name = 0 ;GENERATESTRRES("Palatine Powerplant KE9")
+ids_info = 0 ;GENERATEXMLRES("Palatine Powerplant KE9    Energy Capacity: 3800 Regeneration Rate / sec: 385")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = rh_fighter_power01
+equipment = rh_fighter_power01
+ids_name = 0 ;GENERATESTRRES("Palatine Powerplant RF10")
+ids_info = 0 ;GENERATEXMLRES("Palatine Powerplant RF10    Energy Capacity: 5200 Regeneration Rate / sec: 520")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = rh_freighter_power01
+equipment = rh_freighter_power01
+ids_name = 0 ;GENERATESTRRES("Palatine Powerplant RFR11")
+ids_info = 0 ;GENERATEXMLRES("Palatine Powerplant RFR11    Energy Capacity: 10000 Regeneration Rate / sec: 1000")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = rh_elite_power01
+equipment = rh_elite_power01
+ids_name = 0 ;GENERATESTRRES("Palatine Powerplant RE12")
+ids_info = 0 ;GENERATEXMLRES("Palatine Powerplant RE12    Energy Capacity: 6300 Regeneration Rate / sec: 600")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+[Good]
+nickname = or_elite_power01
+equipment = or_elite_power01
+ids_name = 0 ;GENERATESTRRES("Order Power Plant")
+ids_info = 0 ;GENERATEXMLRES("Order Power Plant    Energy Capacity: 14000 Regeneration Rate / sec: 1400")
+category = equipment
+price = 100
+item_icon = equipment\models\commodities\nn_icons\equipicon_powerplant.3db
+shop_archetype = equipment\models\commodities\crates\crate_grey.3db
+combinable = false
+
+</source>
+</data>
+
+<data file="data\equipment\market_misc.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Br01_02_base
+</section>
+<source>
+MarketGood = armor1, 0, -1, 10, 10, 0, 2
+MarketGood = armor2, 0, -1, 10, 10, 0, 2
+MarketGood = armor3, 0, -1, 10, 10, 0, 2
+MarketGood = armor4, 0, -1, 10, 10, 0, 2
+MarketGood = armor5, 0, -1, 10, 10, 0, 2
+MarketGood = armor6, 0, -1, 10, 10, 0, 2
+MarketGood = armor7, 0, -1, 10, 10, 0, 2
+MarketGood = armor8, 0, -1, 10, 10, 0, 2.1
+MarketGood = armor9, 0, -1, 10, 10, 0, 2.3
+MarketGood = armor10, 0, -1, 10, 10, 0, 2.5
+MarketGood = upgrade_power01, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power02, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power03, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power04, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power05, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power06, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power07, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power08, 0, -1, 10, 10, 0, 2.1
+MarketGood = upgrade_power09, 0, -1, 10, 10, 0, 2.3
+MarketGood = upgrade_power10, 0, -1, 10, 10, 0, 2.5
+; MarketGood = ge_s_scanner_01, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_02, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_03, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_tractor_01, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_thruster_01, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_02, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_03, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_04, 0, -1, 10, 10, 0, 1
+MarketGood = ge_gf1_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf3_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf4_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf5_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf6_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_cof_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_le_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_be_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_ke_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_re_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_oe_engine_01, 0, -1, 100, 100, 0, 1
+
+</source>
+</data>
+
+<data file="data\equipment\market_misc.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Hi02_02_base
+</section>
+<source>
+MarketGood = armor1, 0, -1, 10, 10, 0, 2
+MarketGood = armor2, 0, -1, 10, 10, 0, 2
+MarketGood = armor3, 0, -1, 10, 10, 0, 2
+MarketGood = armor4, 0, -1, 10, 10, 0, 2
+MarketGood = armor5, 0, -1, 10, 10, 0, 2
+MarketGood = armor6, 0, -1, 10, 10, 0, 2
+MarketGood = armor7, 0, -1, 10, 10, 0, 2
+MarketGood = armor8, 0, -1, 10, 10, 0, 2.1
+MarketGood = armor9, 0, -1, 10, 10, 0, 2.3
+MarketGood = armor10, 0, -1, 10, 10, 0, 2.5
+MarketGood = upgrade_power01, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power02, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power03, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power04, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power05, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power06, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power07, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power08, 0, -1, 10, 10, 0, 2.1
+MarketGood = upgrade_power09, 0, -1, 10, 10, 0, 2.3
+MarketGood = upgrade_power10, 0, -1, 10, 10, 0, 2.5
+; MarketGood = ge_s_scanner_01, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_02, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_03, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_tractor_01, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_thruster_01, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_02, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_03, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_04, 0, -1, 10, 10, 0, 1
+MarketGood = ge_gf1_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf3_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf4_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf5_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf6_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_cof_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_le_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_be_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_ke_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_re_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_oe_engine_01, 0, -1, 100, 100, 0, 1
+
+</source>
+</data>
+
+<data file="data\equipment\market_misc.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Ku01_03_base
+</section>
+<source>
+MarketGood = armor1, 0, -1, 10, 10, 0, 2
+MarketGood = armor2, 0, -1, 10, 10, 0, 2
+MarketGood = armor3, 0, -1, 10, 10, 0, 2
+MarketGood = armor4, 0, -1, 10, 10, 0, 2
+MarketGood = armor5, 0, -1, 10, 10, 0, 2
+MarketGood = armor6, 0, -1, 10, 10, 0, 2
+MarketGood = armor7, 0, -1, 10, 10, 0, 2
+MarketGood = armor8, 0, -1, 10, 10, 0, 2.1
+MarketGood = armor9, 0, -1, 10, 10, 0, 2.3
+MarketGood = armor10, 0, -1, 10, 10, 0, 2.5
+MarketGood = upgrade_power01, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power02, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power03, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power04, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power05, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power06, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power07, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power08, 0, -1, 10, 10, 0, 2.1
+MarketGood = upgrade_power09, 0, -1, 10, 10, 0, 2.3
+MarketGood = upgrade_power10, 0, -1, 10, 10, 0, 2.5
+; MarketGood = ge_s_scanner_01, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_02, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_03, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_tractor_01, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_thruster_01, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_02, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_03, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_04, 0, -1, 10, 10, 0, 1
+MarketGood = ge_gf1_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf3_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf4_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf5_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf6_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_cof_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_le_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_be_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_ke_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_re_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_oe_engine_01, 0, -1, 100, 100, 0, 1
+
+</source>
+</data>
+
+<data file="data\equipment\market_misc.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Ku04_03_base
+</section>
+<source>
+MarketGood = armor1, 0, -1, 10, 10, 0, 2
+MarketGood = armor2, 0, -1, 10, 10, 0, 2
+MarketGood = armor3, 0, -1, 10, 10, 0, 2
+MarketGood = armor4, 0, -1, 10, 10, 0, 2
+MarketGood = armor5, 0, -1, 10, 10, 0, 2
+MarketGood = armor6, 0, -1, 10, 10, 0, 2
+MarketGood = armor7, 0, -1, 10, 10, 0, 2
+MarketGood = armor8, 0, -1, 10, 10, 0, 2.1
+MarketGood = armor9, 0, -1, 10, 10, 0, 2.3
+MarketGood = armor10, 0, -1, 10, 10, 0, 2.5
+MarketGood = upgrade_power01, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power02, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power03, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power04, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power05, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power06, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power07, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power08, 0, -1, 10, 10, 0, 2.1
+MarketGood = upgrade_power09, 0, -1, 10, 10, 0, 2.3
+MarketGood = upgrade_power10, 0, -1, 10, 10, 0, 2.5
+; MarketGood = ge_s_scanner_01, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_02, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_03, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_tractor_01, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_thruster_01, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_02, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_03, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_04, 0, -1, 10, 10, 0, 1
+MarketGood = ge_gf1_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf3_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf4_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf5_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf6_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_cof_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_le_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_be_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_ke_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_re_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_oe_engine_01, 0, -1, 100, 100, 0, 1
+
+</source>
+</data>
+
+<data file="data\equipment\market_misc.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Li01_07_base
+</section>
+<source>
+MarketGood = armor1, 0, -1, 10, 10, 0, 2
+MarketGood = armor2, 0, -1, 10, 10, 0, 2
+MarketGood = armor3, 0, -1, 10, 10, 0, 2
+MarketGood = armor4, 0, -1, 10, 10, 0, 2
+MarketGood = armor5, 0, -1, 10, 10, 0, 2
+MarketGood = armor6, 0, -1, 10, 10, 0, 2
+MarketGood = armor7, 0, -1, 10, 10, 0, 2
+MarketGood = armor8, 0, -1, 10, 10, 0, 2.1
+MarketGood = armor9, 0, -1, 10, 10, 0, 2.3
+MarketGood = armor10, 0, -1, 10, 10, 0, 2.5
+MarketGood = upgrade_power01, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power02, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power03, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power04, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power05, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power06, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power07, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power08, 0, -1, 10, 10, 0, 2.1
+MarketGood = upgrade_power09, 0, -1, 10, 10, 0, 2.3
+MarketGood = upgrade_power10, 0, -1, 10, 10, 0, 2.5
+; MarketGood = ge_s_scanner_02, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_03, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_scanner_06, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_tractor_01, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_thruster_01, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_02, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_03, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_04, 0, -1, 10, 10, 0, 1
+MarketGood = ge_gf1_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf3_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf4_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf5_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf6_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_cof_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_le_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_be_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_ke_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_re_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_oe_engine_01, 0, -1, 100, 100, 0, 1
+
+</source>
+</data>
+
+<data file="data\equipment\market_misc.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Li01_14_base
+</section>
+<source>
+MarketGood = armor1, 0, -1, 10, 10, 0, 2
+MarketGood = armor2, 0, -1, 10, 10, 0, 2
+MarketGood = armor3, 0, -1, 10, 10, 0, 2
+MarketGood = armor4, 0, -1, 10, 10, 0, 2
+MarketGood = armor5, 0, -1, 10, 10, 0, 2
+MarketGood = armor6, 0, -1, 10, 10, 0, 2
+MarketGood = armor7, 0, -1, 10, 10, 0, 2
+MarketGood = armor8, 0, -1, 10, 10, 0, 2.1
+MarketGood = armor9, 0, -1, 10, 10, 0, 2.3
+MarketGood = armor10, 0, -1, 10, 10, 0, 2.5
+MarketGood = upgrade_power01, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power02, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power03, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power04, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power05, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power06, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power07, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power08, 0, -1, 10, 10, 0, 2.1
+MarketGood = upgrade_power09, 0, -1, 10, 10, 0, 2.3
+MarketGood = upgrade_power10, 0, -1, 10, 10, 0, 2.5
+; MarketGood = ge_s_scanner_01, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_02, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_03, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_tractor_01, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_thruster_01, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_02, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_03, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_04, 0, -1, 10, 10, 0, 1
+MarketGood = ge_gf1_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf3_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf4_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf5_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf6_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_cof_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_le_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_be_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_ke_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_re_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_oe_engine_01, 0, -1, 100, 100, 0, 1
+
+</source>
+</data>
+
+<data file="data\equipment\market_misc.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Rh01_02_base
+</section>
+<source>
+MarketGood = armor1, 0, -1, 10, 10, 0, 2
+MarketGood = armor2, 0, -1, 10, 10, 0, 2
+MarketGood = armor3, 0, -1, 10, 10, 0, 2
+MarketGood = armor4, 0, -1, 10, 10, 0, 2
+MarketGood = armor5, 0, -1, 10, 10, 0, 2
+MarketGood = armor6, 0, -1, 10, 10, 0, 2
+MarketGood = armor7, 0, -1, 10, 10, 0, 2
+MarketGood = armor8, 0, -1, 10, 10, 0, 2.1
+MarketGood = armor9, 0, -1, 10, 10, 0, 2.3
+MarketGood = armor10, 0, -1, 10, 10, 0, 2.5
+MarketGood = upgrade_power01, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power02, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power03, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power04, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power05, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power06, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power07, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power08, 0, -1, 10, 10, 0, 2.1
+MarketGood = upgrade_power09, 0, -1, 10, 10, 0, 2.3
+MarketGood = upgrade_power10, 0, -1, 10, 10, 0, 2.5
+; MarketGood = ge_s_scanner_02, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_03, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_scanner_06, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_tractor_01, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_thruster_01, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_02, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_03, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_04, 0, -1, 10, 10, 0, 1
+MarketGood = ge_gf1_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf3_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf4_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf5_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf6_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_cof_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_le_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_be_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_ke_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_re_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_oe_engine_01, 0, -1, 100, 100, 0, 1
+
+</source>
+</data>
+
+<data file="data\equipment\market_misc.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Rh02_04_base
+</section>
+<source>
+MarketGood = armor1, 0, -1, 10, 10, 0, 2
+MarketGood = armor2, 0, -1, 10, 10, 0, 2
+MarketGood = armor3, 0, -1, 10, 10, 0, 2
+MarketGood = armor4, 0, -1, 10, 10, 0, 2
+MarketGood = armor5, 0, -1, 10, 10, 0, 2
+MarketGood = armor6, 0, -1, 10, 10, 0, 2
+MarketGood = armor7, 0, -1, 10, 10, 0, 2
+MarketGood = armor8, 0, -1, 10, 10, 0, 2.1
+MarketGood = armor9, 0, -1, 10, 10, 0, 2.3
+MarketGood = armor10, 0, -1, 10, 10, 0, 2.5
+MarketGood = upgrade_power01, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power02, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power03, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power04, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power05, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power06, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power07, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power08, 0, -1, 10, 10, 0, 2.1
+MarketGood = upgrade_power09, 0, -1, 10, 10, 0, 2.3
+MarketGood = upgrade_power10, 0, -1, 10, 10, 0, 2.5
+; MarketGood = ge_s_scanner_01, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_02, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_03, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_tractor_01, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_thruster_01, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_02, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_03, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_04, 0, -1, 10, 10, 0, 1
+MarketGood = ge_gf1_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf3_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf4_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf5_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_gf6_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bwfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_cof_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_coe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bhe2_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_le_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_lfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_be_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_bfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_ke_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_kfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_re_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_rfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pf_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pe_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_pfr_engine_01, 0, -1, 100, 100, 0, 1
+MarketGood = ge_oe_engine_01, 0, -1, 100, 100, 0, 1
+
+</source>
+</data>
+
+<data file="data\equipment\market_misc.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = PVP01_01_base
+</section>
+<source>
+MarketGood = armor1, 0, -1, 10, 10, 0, 2
+MarketGood = armor2, 0, -1, 10, 10, 0, 2
+MarketGood = armor3, 0, -1, 10, 10, 0, 2
+MarketGood = armor4, 0, -1, 10, 10, 0, 2
+MarketGood = armor5, 0, -1, 10, 10, 0, 2
+MarketGood = armor6, 0, -1, 10, 10, 0, 2
+MarketGood = armor7, 0, -1, 10, 10, 0, 2
+MarketGood = armor8, 0, -1, 10, 10, 0, 2.1
+MarketGood = armor9, 0, -1, 10, 10, 0, 2.3
+MarketGood = armor10, 0, -1, 10, 10, 0, 2.5
+MarketGood = upgrade_power01, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power02, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power03, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power04, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power05, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power06, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power07, 0, -1, 10, 10, 0, 2
+MarketGood = upgrade_power08, 0, -1, 10, 10, 0, 2.1
+MarketGood = upgrade_power09, 0, -1, 10, 10, 0, 2.3
+MarketGood = upgrade_power10, 0, -1, 10, 10, 0, 2.5
+; MarketGood = ge_s_scanner_01, 0, -1, 10, 10, 0, 1.25
+; MarketGood = ge_s_scanner_02, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_tractor_01, 0, -1, 10, 10, 0, 1.25
+MarketGood = ge_s_thruster_01, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_02, 0, -1, 10, 10, 0, 1
+MarketGood = ge_s_thruster_03, 0, -1, 10, 10, 0, 1
+</source>
+</data>
+
+
+;//////////////////////////////////////////////////////////
+; PILOTS (already present in goods.ini cuz i hate giant scripts :D)
+<data file="data\equipment\select_equip.ini" method="append">
+<source>
+
+[Commodity]
+nickname = commodity_vips
+ids_name = 0 ;GENERATESTRRES("VIPs")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>VIPs</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>VIPs are the elite of Sirius Civilazation. They may offer you alot of money for travelling to luxurious planets or stations.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 5
+pod_appearance = cargopod_drab
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_prisoners
+ids_name = 0 ;GENERATESTRRES("Prisoners")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>PRISONERS</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Prisoners are the scum of Sirius. Some prisons or legal forces may offer some credits for taking them back, where they belong.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 5
+pod_appearance = cargopod_drab
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_or
+ids_name = 0 ;GENERATESTRRES("Order Pilot")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>ORDER PILOT</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>The pilots of the Order are missunderstood, but still somme prisons or legal forces are paying good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 5
+pod_appearance = cargopod_drab
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_bh
+ids_name = 0 ;GENERATESTRRES("Bounty Hunter")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>BOUNTYHUNTER</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Bountyhunters are not very welcome among every sector in Sirius. Some pirates may offer some credits for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_no
+ids_name = 0 ;GENERATESTRRES("Nomad")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>NOMADS</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Nobody knows where they come from, but Research Stations may pay a good price for experimenting with them.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_cor
+ids_name = 0 ;GENERATESTRRES("Corsair")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>CORSAIR</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_oc
+ids_name = 0 ;GENERATESTRRES("Outcast")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>OUTCAST</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_lr
+ids_name = 0 ;GENERATESTRRES("Liberty Rogue")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>ROGUE</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_x
+ids_name = 0 ;GENERATESTRRES("Xeno")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>XENO</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_m
+ids_name = 0 ;GENERATESTRRES("Molly")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>MOLLY</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_lh
+ids_name = 0 ;GENERATESTRRES("Lanehacker")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>LANE HACKER</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_rh
+ids_name = 0 ;GENERATESTRRES("Red Hessian")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>RED HESSIAN</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_bund
+ids_name = 0 ;GENERATESTRRES("Bundschuh")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>BUNDSCHUH</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_lwb
+ids_name = 0 ;GENERATESTRRES("L.W.B")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>L.W.B.</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_hog
+ids_name = 0 ;GENERATESTRRES("Hogosha")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>HOGOSHA</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_j
+ids_name = 0 ;GENERATESTRRES("Junker")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>JUNKER</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_un
+ids_name = 0 ;GENERATESTRRES("Unioner")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>UNIONER</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_z
+ids_name = 0 ;GENERATESTRRES("Zoner")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>ZONER</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>The Zoners are most likely a neutral faction, but who knows if there is someone who will pay you good for them.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_fa
+ids_name = 0 ;GENERATESTRRES("Farmer")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>FARMER</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Farmers =D</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_bd
+ids_name = 0 ;GENERATESTRRES("Blood Dragon")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>BLOOD DRAGON</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_gc
+ids_name = 0 ;GENERATESTRRES("G.C Pilot")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>G.C.</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_g
+ids_name = 0 ;GENERATESTRRES("Gaian Pilot")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>GAIAN</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Some legal forces, bountyhunters or rivalling factions may pay you some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_lp
+ids_name = 0 ;GENERATESTRRES("Liberty Policeman")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>LIBERTY POLICEMAN</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>The legal forces of Sirius arent welcome in many sectors of Sirius by making their jobs, so maybe some pirate factions will pay some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_kp
+ids_name = 0 ;GENERATESTRRES("Kusari Policeman")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>KUSARI POLICEMAN</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>The legal forces of Sirius arent welcome in many sectors of Sirius by making their jobs, so maybe some pirate factions will pay some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_bp
+ids_name = 0 ;GENERATESTRRES("Bretonia Policeman")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>BRETONIA POLICEMAN</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>The legal forces of Sirius arent welcome in many sectors of Sirius by making their jobs, so maybe some pirate factions will pay some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_rp
+ids_name = 0 ;GENERATESTRRES("Rheinland Policeman")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>RHEINLAND POLICEMAN</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>The legal forces of Sirius arent welcome in many sectors of Sirius by making their jobs, so maybe some pirate factions will pay some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_ln
+ids_name = 0 ;GENERATESTRRES("Liberty Officer")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>LIBERTY OFFICER</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>The legal forces of Sirius arent welcome in many sectors of Sirius by making their jobs, so maybe some pirate factions will pay some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_lsf
+ids_name = 0 ;GENERATESTRRES("LSF Officer")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>LSF OFFICER</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>The legal forces of Sirius arent welcome in many sectors of Sirius by making their jobs, so maybe some pirate factions will pay some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_kn
+ids_name = 0 ;GENERATESTRRES("Kusari Officer")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>KUSARI OFFICER</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>The legal forces of Sirius arent welcome in many sectors of Sirius by making their jobs, so maybe some pirate factions will pay some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_bn
+ids_name = 0 ;GENERATESTRRES("Bretonian Officer")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>BRETONIA OFFICER</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>The legal forces of Sirius arent welcome in many sectors of Sirius by making their jobs, so maybe some pirate factions will pay some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_rn
+ids_name = 0 ;GENERATESTRRES("Rheinland Officer")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>RHEINLAND OFFICER</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>The legal forces of Sirius arent welcome in many sectors of Sirius by making their jobs, so maybe some pirate factions will pay some good money for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_img
+ids_name = 0 ;GENERATESTRRES("I.M.G Pilot")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>I.M.G PILOT</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Independet Miners are not very welcome among every sector in Sirius. Some pirates may offer some credits for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_gmg
+ids_name = 0 ;GENERATESTRRES("G.M.G Pilot")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>G.M.G PILOT</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>The Gas Miners Guild is not very welcome among every sector in Sirius. Some pirates may offer some credits for their capture.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_cp
+ids_name = 0 ;GENERATESTRRES("Corporation Pilot")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>CORPORATION PILOT</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>They can be sold as slaves to different factions around Sirius, or taken to any near station or planet for a small reward.</TEXT><PARA/><POP/></RDL>")
+units_per_container = 1
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+mass = 10
+hit_pts = 250
+
+[Commodity]
+nickname = commodity_crew
+ids_name = 0 ;GENERATESTRRES("Crew")
+ids_info = 0 ;GENERATEXMLRES("<?xml version="1.0" encoding="UTF-16"?><RDL><PUSH/><TRA data="1" mask="1" def="-2"/><JUST loc="center"/><TEXT>Crew</TEXT><PARA/><TRA data="0" mask="1" def="-1"/><JUST loc="left"/><TEXT> </TEXT><PARA/><TEXT>Needed to keep player deployed bases running. </TEXT><PARA/><POP/></RDL>")
+units_per_container = 500
+pod_appearance = cargopod_green
+loot_appearance = lootcrate_escape_pod
+decay_per_second = 0
+volume = 1
+hit_pts = 7500
+</source>
+</data>
+
+
+;////////////////////////////////////////////////////////////////////////////
+; PILOT MARKET LOCATIONS  + PRICING
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Br02_01_base
+</section>
+<source>
+MarketGood = commodity_or, 0, -1, 0, 0, 1, 160
+MarketGood = commodity_oc, 0, -1, 0, 0, 1, 4.7450
+MarketGood = commodity_cor, 0, -1, 0, 0, 1, 4.7450
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 4
+MarketGood = commodity_m, 0, -1, 0, 0, 1, 4.7450
+MarketGood = commodity_lh, 0, -1, 0, 0, 1, 4.7450
+MarketGood = commodity_rh, 0, -1, 0, 0, 1, 4.7450
+MarketGood = commodity_j, 0, -1, 0, 0, 1, 4.7450
+MarketGood = commodity_g, 0, -1, 0, 0, 1, 4.7450
+MarketGood = commodity_prisoners, 0, -1, 0, 0, 1, 1.63
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Br01_08_base
+</section>
+<source>
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_hog, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Br01_03_base
+</section>
+<source>
+MarketGood = commodity_cor, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_m, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_j, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_g, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Br03_03_base
+</section>
+<source>
+MarketGood = commodity_oc, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_cor, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_m, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rh, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_j, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_g, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Br04_03_base
+</section>
+<source>
+MarketGood = commodity_oc, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_m, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_g, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Br05_04_base
+</section>
+<source>
+MarketGood = commodity_oc, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_cor, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_m, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_g, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Br05_05_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Br06_03_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Br06_02_base
+</section>
+<source>
+MarketGood = commodity_cor, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_m, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_g, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Bw02_01_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_img, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rh, 0, -1, 0, 0, 1, 1.8750
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Bw02_02_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_img, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_cor, 0, -1, 0, 0, 1, 1.8750
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Bw04_02_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_ln, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_img, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_cor, 0, -1, 0, 0, 1, 1.8750
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Bw05_03_base
+</section>
+<source>
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_hog, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Li01_13_base
+</section>
+<source>
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_hog, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Li04_04_base
+</section>
+<source>
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_hog, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Rh01_08_base
+</section>
+<source>
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_hog, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Bw08_01_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_ln, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_img, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_cor, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lr, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rh, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bund, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_fa, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Ew02_01_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_ln, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_img, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_cor, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rh, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bund, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_fa, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Ew03_01_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_ln, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_img, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_oc, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lr, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rh, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bund, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_fa, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Hi01_01_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 6.2500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 5.0000
+MarketGood = commodity_ln, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_lp, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_lsf, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_img, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_cor, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_rh, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_bund, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_fa, 0, -1, 0, 0, 1, 3.7500
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Hi02_02_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 6.2500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 5.0000
+MarketGood = commodity_ln, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_lsf, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_lp, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_img, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_oc, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_lr, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_rh, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_bund, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_fa, 0, -1, 0, 0, 1, 3.7500
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Hi02_01_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 6.2500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 5.0000
+MarketGood = commodity_ln, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_lsf, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_lp, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_img, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_oc, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_lr, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_rh, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_bund, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_fa, 0, -1, 0, 0, 1, 3.7500
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Iw01_01_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_ln, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lsf, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Iw02_01_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_ln, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lsf, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_img, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Iw05_02_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_ln, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lsf, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_img, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Li03_03_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 2.5000
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_ln, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lsf, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_img, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Iw04_02_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_ln, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lsf, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_img, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Iw06_01_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_ln, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lsf, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_img, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Ku02_01_base
+</section>
+<source>
+MarketGood = commodity_oc, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_cor, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_lr, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_lh, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_j, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_fa, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_bd, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_gc, 0, -1, 0, 0, 1, 3.7500
+MarketGood = commodity_prisoners, 0, -1, 0, 0, 1, 1.65
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Ku03_03_base
+</section>
+<source>
+MarketGood = commodity_oc, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_cor, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lr, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lh, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_j, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_fa, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bd, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gc, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Ku05_01_base
+</section>
+<source>
+MarketGood = commodity_oc, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_cor, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lr, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_lh, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_j, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_fa, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_bd, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gc, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Ku05_02_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_hog, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Ku06_01_base
+</section>
+<source>
+MarketGood = commodity_cp, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_bh, 0, 0, 0, 0, 1, 3.7500
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kn, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_kp, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_gmg, 0, -1, 0, 0, 1, 2.5000
+MarketGood = commodity_hog, 0, -1, 0, 0, 1, 2.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Li02_04_base
+</section>
+<source>
+MarketGood = commodity_no, 0, -1, 0, 0, 1, 4.26250
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Ku03_04_base
+</section>
+<source>
+MarketGood = commodity_no, 0, -1, 0, 0, 1, 3.6000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Ku04_04_base
+</section>
+<source>
+MarketGood = commodity_no, 0, -1, 0, 0, 1, 3.0000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Br03_02_base
+</section>
+<source>
+MarketGood = commodity_no, 0, -1, 0, 0, 1, 4.5000
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Li01_11_base
+</section>
+<source>
+MarketGood = commodity_or, 0, -1, 0, 0, 1, 60
+MarketGood = commodity_oc, 0, -1, 0, 0, 1, 1.1750
+MarketGood = commodity_lr, 0, -1, 0, 0, 1, 1.1750
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 1.1750
+MarketGood = commodity_lh, 0, -1, 0, 0, 1, 1.1750
+MarketGood = commodity_un, 0, -1, 0, 0, 1, 1.1750
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Li04_02_base
+</section>
+<source>
+MarketGood = commodity_or, 0, -1, 0, 0, 1, 125
+MarketGood = commodity_oc, 0, -1, 0, 0, 1, 1.8750
+MarketGood = commodity_lr, 0, -1, 0, 0, 1, 1.8750
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 1.8750
+MarketGood = commodity_lh, 0, -1, 0, 0, 1, 1.8750
+MarketGood = commodity_un, 0, -1, 0, 0, 1, 1.8750
+MarketGood = commodity_prisoners, 0, -1, 0, 0, 1, 0.65
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Li04_05_base
+</section>
+<source>
+MarketGood = commodity_or, 0, -1, 0, 0, 1, 131.25
+MarketGood = commodity_oc, 0, -1, 0, 0, 1, 2.1250
+MarketGood = commodity_lr, 0, -1, 0, 0, 1, 2.1250
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 2.1250
+MarketGood = commodity_lh, 0, -1, 0, 0, 1, 2.1250
+MarketGood = commodity_un, 0, -1, 0, 0, 1, 2.1250
+MarketGood = commodity_prisoners, 0, -1, 0, 0, 1, 0.77
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend"> 
+<section>
+[BaseGood]
+base = Rh02_03_base
+</section>
+<source>
+MarketGood = commodity_or, 0, -1, 0, 0, 1, 218.75
+MarketGood = commodity_oc, 0, -1, 0, 0, 1, 3.75
+MarketGood = commodity_cor, 0, -1, 0, 0, 1, 3.75
+MarketGood = commodity_lr, 0, -1, 0, 0, 1, 3.75
+MarketGood = commodity_x, 0, -1, 0, 0, 1, 3.75
+MarketGood = commodity_m, 0, -1, 0, 0, 1, 3.75
+MarketGood = commodity_lh, 0, -1, 0, 0, 1, 3.75
+MarketGood = commodity_rh, 0, -1, 0, 0, 1, 3.75
+MarketGood = commodity_bund, 0, -1, 0, 0, 1, 3.75
+MarketGood = commodity_lwb, 0, -1, 0, 0, 1, 3.75
+MarketGood = commodity_un, 0, -1, 0, 0, 1, 3.75
+MarketGood = commodity_prisoners, 0, -1, 0, 0, 1, 2
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Rh05_04_base
+</section>
+<source>
+MarketGood = commodity_rn, 0, -1, 0, 0, 1, 2
+MarketGood = commodity_rp, 0, -1, 0, 0, 1, 2
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Br06_01_base
+</section>
+<source>
+MarketGood = commodity_vips, 0, -1, 0, 0, 1, 2.5
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Bw07_01_base
+</section>
+<source>
+MarketGood = commodity_vips, 0, -1, 0, 0, 1, 3
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Iw04_01_base
+</section>
+<source>
+MarketGood = commodity_vips, 0, -1, 0, 0, 1, 2
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Li01_01_base
+</section>
+<source>
+MarketGood = commodity_vips, 0, -1, 150, 500, 0, 1
+</source>
+</data>
+
+<data file="data\equipment\market_commodities.ini" method="sectionappend">
+<section>
+[BaseGood]
+base = Li01_01_base
+</section>
+<source>
+MarketGood = commodity_prisoners, 0, -1, 150, 500, 0, 0.25
+</source>
+</data>
+
+</script>
