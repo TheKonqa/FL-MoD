@@ -19,10 +19,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Manhattan
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -31,10 +31,10 @@ faction = fc_or_grp, 0.500000
 comment = Ft. Bush
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -43,10 +43,10 @@ faction = fc_or_grp, 0.500000
 comment = Norfolk and Missouri
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -55,10 +55,10 @@ faction = fc_or_grp, 0.500000
 comment = West point
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -79,10 +79,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Mojave
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\li02\li02.ini" method="sectionappend" options="1:1">
@@ -90,10 +90,10 @@ faction = fc_or_grp, 0.500000
 comment = Los Angeles
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\li02\li02.ini" method="sectionappend" options="1:1">
@@ -101,10 +101,10 @@ faction = fc_or_grp, 0.500000
 comment = California Minor
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -125,10 +125,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Denver
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\li03\li03.ini" method="sectionappend" options="1:1">
@@ -136,10 +136,10 @@ faction = fc_or_grp, 0.500000
 comment = Pueblo
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\li03\li03.ini" method="sectionappend" options="1:1">
@@ -147,10 +147,10 @@ faction = fc_or_grp, 0.500000
 comment = Rio Grande
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -170,10 +170,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Houston
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\li04\li04.ini" method="sectionappend" options="1:1">
@@ -181,10 +181,10 @@ faction = fc_or_grp, 0.500000
 comment = Brazos-Sugerland Prison
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -204,10 +204,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Dortmund
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\rh01\rh01.ini" method="sectionappend" options="1:1">
@@ -215,10 +215,10 @@ faction = fc_or_grp, 0.500000
 comment = Bonn
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\rh01\rh01.ini" method="sectionappend" options="1:1">
@@ -226,10 +226,10 @@ faction = fc_or_grp, 0.500000
 comment = Brandeburg
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\rh01\rh01.ini" method="sectionappend" options="1:1">
@@ -237,10 +237,10 @@ faction = fc_or_grp, 0.500000
 comment = Berlin
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -260,10 +260,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Hamburg
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\rh02\rh02.ini" method="sectionappend" options="1:1">
@@ -271,10 +271,10 @@ faction = fc_or_grp, 0.500000
 comment = Vierlande
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\rh02\rh02.ini" method="sectionappend" options="1:1">
@@ -282,10 +282,10 @@ faction = fc_or_grp, 0.500000
 comment = Alster
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\rh02\rh02.ini" method="sectionappend" options="1:1">
@@ -293,10 +293,10 @@ faction = fc_or_grp, 0.500000
 comment = Westfalen
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -316,10 +316,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Stuttgart
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\rh03\rh03.ini" method="sectionappend" options="1:1">
@@ -327,10 +327,10 @@ faction = fc_or_grp, 0.500000
 comment = Beden
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\rh03\rh03.ini" method="sectionappend" options="1:1">
@@ -338,10 +338,10 @@ faction = fc_or_grp, 0.500000
 comment = Freiburg
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -361,10 +361,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Holdstein
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\rh04\rh04.ini" method="sectionappend" options="1:1">
@@ -372,10 +372,10 @@ faction = fc_or_grp, 0.500000
 comment = Mainz
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -395,10 +395,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Leipzig
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\rh05\rh05.ini" method="sectionappend" options="1:1">
@@ -406,10 +406,10 @@ faction = fc_or_grp, 0.500000
 comment = Bautzen
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\rh05\rh05.ini" method="sectionappend" options="1:1">
@@ -417,10 +417,10 @@ faction = fc_or_grp, 0.500000
 comment = Pirna
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -440,10 +440,10 @@ filename = missions\encounters\area_nomads.ini
 comment = New Tokyo
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\ku01\ku01.ini" method="sectionappend" options="1:1">
@@ -451,10 +451,10 @@ faction = fc_or_grp, 0.500000
 comment = Shinagawa
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\ku01\ku01.ini" method="sectionappend" options="1:1">
@@ -462,10 +462,10 @@ faction = fc_or_grp, 0.500000
 comment = Narita
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\ku01\ku01.ini" method="sectionappend" options="1:1">
@@ -473,10 +473,10 @@ faction = fc_or_grp, 0.500000
 comment = Yokohama
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\ku01\ku01.ini" method="sectionappend" options="1:1">
@@ -484,10 +484,10 @@ faction = fc_or_grp, 0.500000
 comment = Shinjuku
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -508,10 +508,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Fushu
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\ku02\ku02.ini" method="sectionappend" options="1:1">
@@ -519,10 +519,10 @@ faction = fc_or_grp, 0.500000
 comment = Myoko
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\ku02\ku02.ini" method="sectionappend" options="1:1">
@@ -530,10 +530,10 @@ faction = fc_or_grp, 0.500000
 comment = Deshima
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\ku02\ku02.ini" method="sectionappend" options="1:1">
@@ -541,10 +541,10 @@ faction = fc_or_grp, 0.500000
 comment = Junyo
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -564,10 +564,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Kyushu
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\ku03\ku03.ini" method="sectionappend" options="1:1">
@@ -575,10 +575,10 @@ faction = fc_or_grp, 0.500000
 comment = Tsuchima
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\ku03\ku03.ini" method="sectionappend" options="1:1">
@@ -586,10 +586,10 @@ faction = fc_or_grp, 0.500000
 comment = Nansei research
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -609,10 +609,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Kansai
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\ku04\ku04.ini" method="sectionappend" options="1:1">
@@ -620,10 +620,10 @@ faction = fc_or_grp, 0.500000
 comment = Honshu
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\ku04\ku04.ini" method="sectionappend" options="1:1">
@@ -631,10 +631,10 @@ faction = fc_or_grp, 0.500000
 comment = Osaka
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\ku04\ku04.ini" method="sectionappend" options="1:1">
@@ -642,10 +642,10 @@ faction = fc_or_grp, 0.500000
 comment = Ukawa
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\ku04\ku04.ini" method="sectionappend" options="1:1">
@@ -653,10 +653,10 @@ faction = fc_or_grp, 0.500000
 comment = Sigma19 Jumpgate / Aomori
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\ku04\ku04.ini" method="sectionappend" options="1:1">
@@ -664,10 +664,10 @@ faction = fc_or_grp, 0.500000
 comment = Akita
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -687,10 +687,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Matsumoto bs
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -710,10 +710,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Leeds
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\br04\br04.ini" method="sectionappend" options="1:1">
@@ -721,10 +721,10 @@ faction = fc_or_grp, 0.500000
 comment = Stokes
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -744,10 +744,10 @@ filename = missions\encounters\area_nomads.ini
 comment = New London
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\br01\br01.ini" method="sectionappend" options="1:1">
@@ -755,10 +755,10 @@ faction = fc_or_grp, 0.500000
 comment = Dover / Canterbury
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\br01\br01.ini" method="sectionappend" options="1:1">
@@ -766,10 +766,10 @@ faction = fc_or_grp, 0.500000
 comment = South Hampton
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -789,10 +789,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Birmingham
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -813,10 +813,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Cardiff
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\br03\br03.ini" method="sectionappend" options="1:1">
@@ -824,10 +824,10 @@ faction = fc_or_grp, 0.500000
 comment = Norfolk
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 <data file="data\universe\systems\br03\br03.ini" method="sectionappend" options="1:1">
@@ -835,10 +835,10 @@ faction = fc_or_grp, 0.500000
 comment = Cabridge / Kingston
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -859,10 +859,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Essex
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -882,10 +882,10 @@ filename = missions\encounters\area_nomads.ini
 comment = Freeport9
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
-encounter = area_defend, 19, 0.500000
-faction = fc_or_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
+encounter = area_defend, 19, 0.5
+faction = fc_or_grp, 0.5
 </source>
 </data>
 
@@ -905,8 +905,8 @@ filename = missions\encounters\area_nomads.ini
 comment = Hispania
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
 </source>
 </data>
 
@@ -926,8 +926,8 @@ filename = missions\encounters\area_nomads.ini
 comment = Malta
 </section>
 <source>
-encounter = area_nomads, 19, 0.500000
-faction = fc_n_grp, 0.500000
+encounter = area_nomads, 19, 0.5
+faction = fc_n_grp, 0.5
 </source>
 </data>
 
